@@ -1,5 +1,3 @@
-## Namespaces
-
 > Namespaces isolate pods to separate workloads from each other and to give you the capability of setting up resource constrainsts. You can map namespaces to the different application environments you might consider.
 
 ### Discover Kubernetes namespaces
@@ -42,3 +40,17 @@ This namespace is initially empty and doesn't contain any objects:
 `kubectl get pods -n default; echo`{{exec}}
 
 One thing to note about the `default` namespace is that it can't be deleted, unlike other namespaces within the Kubernetes cluster.
+
+## Let's Create a namespace
+
+Create a namespace named `development`
+
+<br>
+<details><summary>Solution</summary>
+<br>
+
+```plain
+kubectl create namespace development
+```{{exec}}
+
+</details>

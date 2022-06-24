@@ -1,4 +1,4 @@
-# Killercoda Kubernetes
+# Kubernetes Scenarios
 
 This is the repository for the scenarios available on [killercoda.com/kubernetes](https://killercoda.com/kubernetes)
 

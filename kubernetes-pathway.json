@@ -1,0 +1,67 @@
+{
+    "title": "Kubernetes",
+    "icon": "fa-kubernetes",
+    "description": "Kubernetes Basics",
+    "courses": [  
+      {
+        "course_id": "01-namespaces-and-pods",
+        "title": "Pods",
+        "description": "Introduction to Pods and Namespaces"
+      },
+      {
+        "course_id": "02-assigning-pods-to-nodes",
+        "title": "Assign pods to nodes",
+        "description": "Introduction to Node Selector and Affinity"
+      },
+      {
+        "course_id": "03-basic-deployment",
+        "title": "Jobs, Init Containers and Cron Jobs",
+        "description": "Introduction to Jobs, Init Containers and Cron Jobs"
+      },
+      {
+        "course_id": "04-advanced-deployment",
+        "title": "DaemonSet",
+        "description": "Introduction to DaemonSet"
+      },
+      {
+        "course_id": "05-job-and-cronjob",
+        "title": "Basic Deployments",
+        "description": "Introduction to basic deployments"
+      },
+      {
+        "course_id": "06-daemonset",
+        "title": "Advanced Deployments",
+        "description": "Introduction to advanced deployments"
+      },
+      {
+        "course_id": "07-services",
+        "title": "Services",
+        "description": "Introduction to services"
+      },
+      {
+        "course_id": "08-ingress",
+        "title": "Ingress",
+        "description": "Introduction to Ingress"
+      },
+      {
+        "course_id": "09-volumes",
+        "title": "Volumes",
+        "description": "Introduction to Volumes"
+      },
+      {
+        "course_id": "10-configmap-and-secrets",
+        "title": "ConfigMaps and Secrets",
+        "description": "Introduction to ConfigMaps and Secrets"
+      },
+      {
+        "course_id": "11-debugging",
+        "title": "Debugging",
+        "description": "Learn debugging"
+      },
+      {
+        "course_id": "12-challenge",
+        "title": "Challenge",
+        "description": "Let's apply what you've learned!"
+      }
+     ]
+}

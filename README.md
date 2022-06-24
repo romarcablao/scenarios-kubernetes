@@ -1,14 +1,18 @@
 # Kubernetes Scenarios
 
-This is the repository for the scenarios available on [killercoda.com/kubernetes](https://killercoda.com/kubernetes)
-
-## Scenario Ideas
-
-* Deployment
-* StatefulSet
-* kubectl intro
-* kubectl contexts
-* ...
+## TODO
+Katakoda migration:
+1. Working with Namespaces and Pods
+2. Assigning Pods to Node
+3. Basic Deployment
+4. Advanced Deployment
+5. Job and CronJob
+6. DaemonSet 
+7. Services 
+8. Ingress 
+9. Volumes 
+10. ConfigMap and Secrets
+11. Debugging - Deployment and Service
 
 ## Contribute
 

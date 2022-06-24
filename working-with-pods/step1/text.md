@@ -9,7 +9,7 @@ kubectl get namespaces
 <br>
 By default, Kubernetes comes with a few predefined namespaces. We can see them here:
 
-![Namespace](./assets/avatar.png)
+![Namespace](../assets/avatar.png)
 
 <br>
 <details><summary>Solution</summary>

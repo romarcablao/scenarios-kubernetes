@@ -1,12 +1,15 @@
+Take a look at the file `pod-namespace.yaml`{{open}}
 
-Delete the pod called `my-pod`
+Notice that `happypanda` pod has been configured to be scheduled in the **dev-service1** namespace.
 
-<br>
-<details><summary>Solution</summary>
-<br>
+Let's apply this yaml file, leveraging the following command:
 
-```plain
-k delete pod my-pod
-```{{exec}}
+`kubectl apply -f /pods-manifests/pod-namespace.yaml`{{execute}}
 
-</details>
+## Validation
+
+Let's have a look at the pods running in **dev-service1** namespace:
+
+`kubectl get pods -n dev-service1`{{execute}}
+
+Great! The `happypanda` pod is running in the `dev-service1` namespace!

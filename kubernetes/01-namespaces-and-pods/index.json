@@ -39,6 +39,9 @@
     ],
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [{"file": "*.yaml", "target": "/pods-manifests"}]
     }
   },
   "backend": {

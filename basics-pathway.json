@@ -10,7 +10,12 @@
       {
         "course_id": "deploy-istio-on-kubernetes",
         "title": "Deploy Istio on Kubernetes",
-        "description": "Learn to use Terraform to provision an Nginx web server within Docker."
+        "description": "Learn to use Istio."
+      },
+      {
+        "course_id": "creating-dashboards-with-grafana",
+        "title": "Create Dashboards with Grafana",
+        "description": "Learn to use Grafana"
       }
      ]
 }

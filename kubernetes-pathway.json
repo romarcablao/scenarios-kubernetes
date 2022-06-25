@@ -15,23 +15,23 @@
       },
       {
         "course_id": "03-basic-deployment",
-        "title": "Jobs, Init Containers and Cron Jobs",
-        "description": "Introduction to Jobs, Init Containers and Cron Jobs"
-      },
-      {
-        "course_id": "04-advanced-deployment",
-        "title": "DaemonSet",
-        "description": "Introduction to DaemonSet"
-      },
-      {
-        "course_id": "05-job-and-cronjob",
         "title": "Basic Deployments",
         "description": "Introduction to basic deployments"
       },
       {
-        "course_id": "06-daemonset",
+        "course_id": "04-advanced-deployment",
         "title": "Advanced Deployments",
         "description": "Introduction to advanced deployments"
+      },
+      {
+        "course_id": "05-job-and-cronjob",
+        "title": "Jobs, Init Containers and Cron Jobs",
+        "description": "Introduction to Jobs, Init Containers and Cron Jobs"
+      },
+      {
+        "course_id": "06-daemonset",
+        "title": "DaemonSet",
+        "description": "Introduction to DaemonSet"
       },
       {
         "course_id": "07-services",

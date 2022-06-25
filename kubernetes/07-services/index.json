@@ -1,0 +1,34 @@
+{
+  "title": "Manage Services",
+  "description": "Manage Services in this scenario.",
+  "difficulty": "beginner",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      { "title": "Launch Deployment", "text": "launch-deployment.md" },
+      { "title": "ClusterIP Service", "text": "clusterip.md" },
+      { "title": "NodePort Service", "text": "nodeport.md" },      
+      { "title": "LoadBalancer Service", "text": "loadbalancer.md" },
+      { "title": "Exercise", "text": "exercise.md" }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [{"file": "*.yml", "target": "/manifests"}]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/manifests",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n",
+    "icon": "fa-kubernetes"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}

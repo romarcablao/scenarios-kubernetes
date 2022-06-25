@@ -1,0 +1,1 @@
+Create a deployment with the `httpd` image and expose it as a NodePort service.

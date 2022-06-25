@@ -1,0 +1,29 @@
+{
+  "title": "Assign pod to nodes",
+  "description": "Learn how to assign Pods to nodes, using Node Selectors and Node/Pod Affinity and Anti-Affinity",
+  "difficulty": "beginner",
+  "time": "5-10 minutes",
+  "details": {
+    "steps": [
+      { "title": "Node Selector", "text": "pod-nodeselector.md"},
+      { "title": "Node Affinity and Anti-Affinity", "text": "node-affinity-anti-affinity.md"},
+      { "title": "Pod Affinity and Anti-Affinity", "text": "pod-affinity-anti-affinity.md"}
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [{"file": "*.yaml", "target": "/manifests"}]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}

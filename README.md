@@ -2,6 +2,16 @@
 
 ## TODO
 Katakoda migration:
+
+### Docker
+1. Deploy Static HTML Website as Container
+2. Dockerizing Node.js
+3. Managing Log Files
+4. Private Registry with SSL
+5. Docker Networks
+6. Orchestration using Docker Compose
+
+### Kubernetes
 1. Working with Namespaces and Pods
 2. Assigning Pods to Node
 3. Basic Deployment
@@ -13,6 +23,11 @@ Katakoda migration:
 9. Volumes 
 10. ConfigMap and Secrets
 11. Debugging - Deployment and Service
+
+### Basics
+1. Terraform
+2. Prometheus and Grafana
+3. Service Mesh with Istio
 
 ## Contribute
 

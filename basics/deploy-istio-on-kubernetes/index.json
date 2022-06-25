@@ -68,7 +68,6 @@
         ]
     },
     "backend": {
-        "port": 80,
-        "dockerimage": "istio"
+        "imageid": "ubuntu"
     }
 }

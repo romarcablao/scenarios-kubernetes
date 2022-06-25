@@ -35,15 +35,7 @@
     "exclusionPatterns": ["./terraform/*"]
   },
   "backend": {
-    "imageid": "hashicorp-hashistack",
-    "lifetime": 30,
-    "showdashboard": true,
-    "dashboards": [
-      {
-        "name": "Nginx",
-        "port": 80
-      }
-    ]
+    "imageid": "ubuntu"
   },
   "private": true
 }

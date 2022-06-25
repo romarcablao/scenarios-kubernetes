@@ -1,5 +1,5 @@
 {
-  "title": "Assign pod to nodes",
+  "title": "02. Assign pod to nodes",
   "description": "Learn how to assign Pods to nodes, using Node Selectors and Node/Pod Affinity and Anti-Affinity",
   "difficulty": "beginner",
   "time": "5-10 minutes",

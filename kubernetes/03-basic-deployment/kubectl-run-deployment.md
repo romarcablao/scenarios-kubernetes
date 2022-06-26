@@ -1,6 +1,6 @@
 Kubernetes deployments manage stateless services running in your cluster (as opposed to - for example - StatefulSets, which manage stateful services). Their purpose is to keep a set of identical pods running and upgrade them in a controlled way – performing a rolling update by default. There are different deployment strategies that work with Deployments. They are, however, out of scope of this scenario. For more information on deployment strategies, read the [Kubernetes Documentation here](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#writing-a-deployment-spec).
 
-![deployments-high-level-overview](deployment-high-level.png)
+![deployments-high-level-overview](./assets/deployment-high-level.png)
 
 ### Creating a Deployment in kubectl
 

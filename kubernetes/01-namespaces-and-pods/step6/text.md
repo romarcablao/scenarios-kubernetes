@@ -1,13 +1,12 @@
 Let's practice!
 
-1. Create namespace: `lab1`
+##  Create namespace: `cloudnative`
 
-Create a `pod` with the following constraints:
-
-1. Pod name: `happyelephant`
-2. Deploy pod in a `lab1` namespace
-3. Add `3 labels`
-4. Use this container image: `jenkins:latest`
-5. Set the container with `8080 port`
-6. Check happyelephant is running successfully
-7. Delete happyelephant pod (remember set up path: /root/pods-manifests/)
+## Create a `pod` with the following constraints:
+1. Pod name: `jenkins`
+2. Deploy pod in a `cloudnative` namespace
+3. Add additional labels:
+    a. app: jenkins
+    b. company: stratpoint
+4. Use this container image: `jenkins/jenkins:lts`
+5. Expose the pod using a service and check if `Jenkins` is running successfully

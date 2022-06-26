@@ -13,7 +13,7 @@ In this exercise, we want to create a Pod and first of all, we are going to chec
 
 Kubernetes API Reference provides us with the necessary information to write the Pod's specification in YAML format. 
 
-Take a look at the file `pod.yaml`{{open}}
+Take a look at the file `pod.yaml`
 
 The pod name is `happypanda` and it deploys an `nginx` container image from Docker Hub's public registry.
 

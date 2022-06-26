@@ -5,8 +5,8 @@
     "assets": {
       "host01": [
         {
-          "file": "resources/*",
-          "target": "/root/newresources"
+          "file": "*.yaml",
+          "target": "/tmp"
         }
       ]
     },

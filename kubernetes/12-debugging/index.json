@@ -3,7 +3,7 @@
   "description": "Debug some common problems",
   "details": {
     "steps": [
-      { "title": "Exercise", "text": "exercise.md" }
+      { "title": "Exercise", "text": "exercise.md", "verify": "verify.sh" }
     ],
     "intro": {
       "text": "intro.md",

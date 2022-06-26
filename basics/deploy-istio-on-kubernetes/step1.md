@@ -1,7 +1,28 @@
-To start, launch the Kubernetes cluster. This will launch a two-node Kubernetes cluster with one master and one node.
+This scenario uses a two-node Kubernetes cluster with one master and one node. To validate you can run the following commands:
 
-`launch.sh`{{execute}}
+```plain
+kubectl cluster-info
+kubectl get nodes -o wide
+```{{exec}}
 
-#### Health Check
+<br>
 
-Once started, you can get the status of the cluster with `kubectl cluster-info`{{execute}}
+### Install Istioctl and Deploy Istio Core Component
+
+To continue, we need to install `istioctl`.
+
+```plain
+export ISTIO_VERSION=1.13.3
+curl -L https://istio.io/downloadIstio | TARGET_ARCH=x86_64 sh -
+echo "export PATH=/root/istio-${ISTIO_VERSION}/bin:\$PATH" >> .bashrc
+export PATH=/root/istio-${ISTIO_VERSION}/bin:$PATH
+```{{exec}}
+
+Hmmm, does the installation succedded? Let's check with this command `istioctl version`{{exec}}.
+
+Let's then apply all istio manifest using `istioctl`.
+
+```plain
+mv /tmp/demo.yaml /root/istio-${ISTIO_VERSION}/manifests/profiles/
+istioctl install --set profile=demo -y --manifests=/root/istio-${ISTIO_VERSION}/manifests
+```{{exec}}

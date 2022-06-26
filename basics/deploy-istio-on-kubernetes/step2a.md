@@ -12,4 +12,4 @@ The previous step deployed the Istio Pilot, Mixer, Ingress-Controller, and Egres
 
 The overall architecture is shown below.
 
-![Istio Architecture](https://katacoda.com/courses/istio/deploy-istio-on-kubernetes/assets/istio-arch1.png)
+![Istio Architecture](./assets/istio-arch1.png)

@@ -9,8 +9,7 @@
     "details": {
         "steps": [
             {
-                "title": "Launch Kubernetes Cluster",
-                "code": "set-env.sh",
+                "title": "Install Istioctl and Deploy Istio Core Component",
                 "text": "step1.md"
             },
             {
@@ -54,18 +53,12 @@
         },
         "finish": {
             "text": "finish.md"
+        },
+        "assets": {
+          "host01": [
+            {"file": "wait-background.sh", "target": "/init", "chmod": "+x"}
+          ]
         }
-    },
-    "environment": {
-        "showdashboard": true,
-        "dashboard": "Dashboard",
-        "uilayout": "terminal-terminal-v1",
-        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n",
-        "uidependencies": [
-            "/socket.io/socket.io.js",
-            "/javascripts/term.js",
-            "/javascripts/terminal-application.js"
-        ]
     },
     "backend": {
         "imageid": "kubernetes-kubeadm-2nodes"

@@ -45,7 +45,8 @@
         },
         "assets": {
           "host01": [
-            {"file": "istio-course.yaml", "target": "/tmp", "chmod": "+x"}
+            {"file": "istio-course.yaml", "target": "/tmp", "chmod": "+x"},
+            {"file": "grafana.yaml", "target": "/root/", "chmod": "+x"}
           ]
         }
     },

@@ -4,13 +4,13 @@ With Istio's insight into how applications communicate, it can generate profound
 
 Make view the graphs, there first needs to be some traffic. Execute the command below to send requests to the application.
 
-`
+```
 while true; do
   curl -s https://[[HOST_SUBDOMAIN]]-80-[[KILLERCODA_HOST]].papa.r.killercoda.com/productpage > /dev/null
   echo -n .;
   sleep 0.2
 done
-`{{execute}}
+```{{execute}}
 
 ## Access Dashboards
 

@@ -1,5 +1,3 @@
-## Overview
-
 A `Service` is an abstraction in kubernetes that allows you to connect to pods, it provides two main functionalities service-discovery and load-balancing.
 
 Some typical uses of a Service are:

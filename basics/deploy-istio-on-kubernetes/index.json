@@ -43,7 +43,6 @@
         ],
         "intro": {
             "text": "intro.md",
-            "courseData": "courseBase.sh",
             "credits": ""
         },
         "finish": {

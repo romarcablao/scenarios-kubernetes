@@ -1,11 +1,11 @@
 The BookInfo sample application deployed is composed of four microservices:
 
-* The _productpage_ microservice is the homepage, populated using the details and reviews microservices.
-* The _details_ microservice contains the book information.
-* The _reviews_ microservice contains the book reviews. It uses the ratings microservice for the star rating.
-* The _ratings_ microservice contains the book rating for a book review.
+* The _productpage_ microservice calls the details and reviews microservices to populate the page.
+* The _details_ microservice contains book information.
+* The _reviews_ microservice contains book reviews. It also calls the ratings microservice.
+* The _ratings_ microservice contains book ranking information that accompanies a book review.
 
-The deployment included three versions of the _reviews_ microservice to showcase different behaviour and routing:
+There are 3 versions of the _reviews_ microservice:
 
 * Version _v1_ doesn’t call the ratings service.
 * Version _v2_ calls the ratings service and displays each rating as 1 to 5 black stars.
@@ -13,6 +13,17 @@ The deployment included three versions of the _reviews_ microservice to showcase
 
 The services communicate over HTTP using DNS for service discovery. An overview of the architecture is shown below.
 
-![BookInfo Architecture](https://katacoda.com/courses/istio/deploy-istio-on-kubernetes/assets/bookinfo-arch.png)
+![BookInfo Architecture](./assets/bookinfo-noistio.svg)
+
+
+<br>
+
+To run the sample with Istio requires no changes to the application itself. Instead, you simply need to configure and run the services in an Istio-enabled environment, with Envoy sidecars injected along side each service. The resulting deployment will look like this:
+
+![BookInfo Architecture with Istio](./assets/bookinfo-withistio.svg)
+
+All of the microservices will be packaged with an Envoy sidecar that intercepts incoming and outgoing calls for the services, providing the hooks needed to externally control, via the Istio control plane, routing, telemetry collection, and policy enforcement for the application as a whole.
+
+<br>
 
 The source code for the application is available on [Github](https://github.com/istio/istio/tree/release-0.1/samples/apps/bookinfo/src)

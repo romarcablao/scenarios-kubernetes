@@ -1,19 +1,39 @@
 To showcase Istio, a BookInfo web application has been created. This sample deploys a simple application composed of four separate microservices which will be used to demonstrate various features of the Istio service mesh.
 
-When deploying an application that will be extended via Istio, the Kubernetes YAML definitions are extended via _kube-inject_. This will configure the services proxy sidecar (Envoy), Mixers, Certificates and Init Containers.
+<br>
 
-`kubectl apply -f <(istioctl kube-inject -f istio/bookinfo/bookinfo.yaml)`{{execute}}
+### Sidecar injection
+Now we enable the Istio sidecar injection for the `default` *Namespace*:
+
+```plain
+kubectl label namespace default istio-injection=enabled --overwrite
+```{{exec}}
+
+
+### Install app
+Next we install the [bookinfo sample](https://github.com/istio/istio/tree/master/samples/bookinfo):
+
+```plain
+kubectl apply -f /root/istio-1.13.3/samples/bookinfo/networking/virtual-service-all-v1.yaml
+kubectl apply -f /root/istio-1.13.3/samples/bookinfo/networking/bookinfo-gateway.yaml
+kubectl apply -f /root/istio-1.13.3/samples/bookinfo/networking/destination-rule-all.yaml
+kubectl apply -f /root/istio-1.13.3/samples/bookinfo/platform/kube/bookinfo.yaml
+kubectl wait deploy --all --for condition=available --timeout=1h
+```{{exec}}
 
 ## Check Status
 
 `kubectl get pods`{{execute}}
 
-When the Pods are starting, you may see initiation steps happening as the container is created. This is configuring the Envoy sidebar for handling the traffic management and authentication for the application within the Istio service mesh.
+### Access app
+Now we port-forward to the Istio ingressgateway service:
 
-Once running the application can be accessed via the path _/productpage_.
+```plain
+kubectl port-forward -n istio-system --address 0.0.0.0 service/istio-ingressgateway 1234:80
+```{{exec}}
 
-https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/productpage
+Finally [ACCESS]({{TRAFFIC_HOST1_1234}}/productpage) the Bookinfo app through Istio <small>(or [select the port here]({{TRAFFIC_SELECTOR}}))</small>.
 
-The ingress routing information can be viewed using `kubectl describe ingress`{{execute}}
+<br>
 
 The architecture of the application is described in the next step.

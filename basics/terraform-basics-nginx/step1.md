@@ -26,7 +26,7 @@ You will be asked to confirm. Type `yes` and press `ENTER`. It may take up to 30
 
 Visit this URL to view the default Nginx web page which is now live:
 
-- [Nginx index page](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/)
+- [Nginx index page](https://[[KILLERCODA_URL]]/)
 
 Alternatively, you can examine Docker's process list. You will see the `tutorial` container which is running Nginx.
 

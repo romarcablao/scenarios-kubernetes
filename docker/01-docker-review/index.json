@@ -1,0 +1,41 @@
+{
+  "title": "01. Docker Review",
+  "description": "Let's have a quick review!",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Run Basic Docker Commands",
+        "text": "steps/step1.md"
+      },
+      {
+        "title": "Docker Image Basics",
+        "text": "steps/step2.md"
+      },
+      {
+        "title": "Run A Container",
+        "text": "steps/step3.md"
+      },
+      {
+        "title": "Run Interactive Commands",
+        "text": "steps/step4.md"
+      },
+      {
+        "title": "View Container Logs",
+        "text": "steps/step5.md"
+      },
+      {
+        "title": "Clean Up Images",
+        "text": "steps/step6.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

@@ -1,7 +1,12 @@
 {
     "title": "Docker",
     "description": "Docker Basics",
-    "courses": [  
+    "courses": [
+      {
+        "course_id": "docker-review",
+        "title": "01. Docker Review",
+        "description": "Let's have a quick review!",
+      },
       {
         "course_id": "orchestration-using-docker-compose",
         "title": "Docker Compose Basics",

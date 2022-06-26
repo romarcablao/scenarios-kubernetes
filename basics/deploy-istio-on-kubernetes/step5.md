@@ -13,14 +13,14 @@ There are 3 versions of the _reviews_ microservice:
 
 The services communicate over HTTP using DNS for service discovery. An overview of the architecture is shown below.
 
-![BookInfo Architecture](./assets/bookinfo-noistio.svg)
+![BookInfo Architecture](./assets/bookinfo-noistio.png)
 
 
 <br>
 
 To run the sample with Istio requires no changes to the application itself. Instead, you simply need to configure and run the services in an Istio-enabled environment, with Envoy sidecars injected along side each service. The resulting deployment will look like this:
 
-![BookInfo Architecture with Istio](./assets/bookinfo-withistio.svg)
+![BookInfo Architecture with Istio](./assets/bookinfo-withistio.png)
 
 All of the microservices will be packaged with an Envoy sidecar that intercepts incoming and outgoing calls for the services, providing the hooks needed to externally control, via the Istio control plane, routing, telemetry collection, and policy enforcement for the application as a whole.
 

@@ -4,7 +4,7 @@ An Istio service mesh is logically split into a data plane and a control plane.
 
 > The control plane manages and configures the proxies to route traffic. Additionally, the control plane configures Mixers to enforce policies and collect telemetry.  
 
-![Istio Architecture](./assets/istio-arch.svg)
+![Istio Architecture](./assets/istio-arch.png)
 
 ## Components
 

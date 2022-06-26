@@ -10,7 +10,7 @@ Before we start, you should already have a namespace created called `contino`. I
 
 Create a basic deployment called `nginx-deployment` using the `nginx` image, and expose port 80 in the container:
 
-`kubectl run nginx-deployment -n contino --image=nginx --port 80`{{execute}}
+`kubectl create deployment nginx-deployment -n contino --image=nginx --port 80`{{execute}}
 
 ```
 $ kubectl run nginx-deployment -n contino --image=nginx --port 80

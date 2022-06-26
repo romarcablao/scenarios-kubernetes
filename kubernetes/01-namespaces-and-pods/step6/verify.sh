@@ -1,5 +1,5 @@
 #!/bin/bash
 
-kubectl get ns | grep cloudnative
-kubectl get pod --selector=app=jenkins --selector=company=sp
-kubectl get po jenkins -oyaml | grep "image: jenkins/jenkins:lts"
+if kubectl get ns | grep cloudnative; then exit 1; fi
+if kubectl -n cloudnative get pod --selector=app=jenkins --selector=company=sp; then exit 1; fi
+if kubectl -n cloudnativeget po jenkins -oyaml | grep "image: jenkins/jenkins:lts"; then exit 1; fi

@@ -33,7 +33,7 @@ istioctl install --set profile=demo -y --manifests=/root/istio-${ISTIO_VERSION}/
 
 <br>
 
-## Check Status
+Check Status
 
 All the services are deployed as Pods. Once they're running, Istio is correctly deployed.
 

@@ -26,4 +26,4 @@ All of the microservices will be packaged with an Envoy sidecar that intercepts 
 
 <br>
 
-The source code for the application is available on [Github](https://github.com/istio/istio/tree/release-0.1/samples/apps/bookinfo/src)
+The source code for the application is available on [Github](https://github.com/istio/istio/tree/master/samples/bookinfo)

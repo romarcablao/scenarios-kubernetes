@@ -1,19 +1,45 @@
 {
-  "title": "09. Volumes",
-  "description": "Manage Volumes",
+  "title": "09 Persistent Volumes",
+  "description": "In this lab, we will create PersistentVolumes, and provide them to Pods via PersistentVolumeClaims",
   "details": {
-    "steps": [
-      { "title": "Create a Daemon Set", "text": "volumes.md"}
+    "assets": {
+      "host01": [
+        {
+          "file": "resources/*",
+          "target": "/root/newresources"
+        }
+      ]
+    },
+    "steps": [{
+        "title": "Local Volumes",
+        "text": "step1.md",
+        "verify": "step1-verify.sh"
+      },
+      {
+        "title": "Creating a PersistentVolume",
+        "text": "step2.md"
+      },
+      {
+        "title": "Creating a PersistentVolumeClaim",
+        "text": "step3.md"
+      },
+      {
+        "title": "Adding Storage to Pods",
+        "text": "step4.md"
+
+      },
+      {
+        "title": "Clean-Up",
+        "text": "step5.md"
+
+      }
     ],
     "intro": {
       "text": "intro.md",
-      "code": "set-env.sh"
+      "courseData": "startup.sh"
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "host01": [{"file": "*", "target": "/root"}]
     }
   },
   "backend": {

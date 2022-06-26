@@ -13,12 +13,8 @@
                 "text": "step1.md"
             },
             {
-                "title": "Deploy Istio",
-                "text": "step2.md"
-            },
-            {
                 "title": "Istio Architecture",
-                "text": "step2a.md"
+                "text": "step2.md"
             },
             {
                 "title": "Deploy Istio Metrics and Tracing",

@@ -1,25 +1,15 @@
-Istio is installed in two parts. The first part involves the CLI tooling that will be used to deploy and manage Istio backed services. The second part configures the Kubernetes cluster to support Istio.
+The previous step deployed the Istio Pilot, Mixer, Ingress-Controller, and Egress-Controller, and the Istio CA (Certificate Authority).
 
-## Install CLI tooling
+* **Pilot** - Responsible for configuring the Envoy and Mixer at runtime.
 
-The following command will install the Istio 0.7.1 release.
+* **Envoy** - Sidecar proxies per microservice to handle ingress/egress traffic between services in the cluster and from a service to external services. The proxies form a secure microservice mesh providing a rich set of functions like discovery, rich layer-7 routing, circuit breakers, policy enforcement and telemetry recording/reporting functions.
 
-`curl -L http://assets.joinscrapbook.com/istio/getLatestIstio | sh -`{{execute}}
+* **Mixer** - Create a portability layer on top of infrastructure backends. Enforce policies such as ACLs, rate limits, quotas, authentication, request tracing and telemetry collection at an infrastructure level.
 
-After it has successfully run, add the bin folder to your path.
+* **Ingress/Egress** - Configure path based routing.
 
-`export PATH="$PATH:/root/istio-0.7.1/bin"`{{execute}}
+* **Istio CA** - Secures service to service communication over TLS. Providing a key management system to automate key and certificate generation, distribution, rotation, and revocation
 
-## Configure Istio
+The overall architecture is shown below.
 
-The core components of Istio are deployed via _istio.yaml_.
-
-`kubectl apply -f istio/istio.yaml`{{execute}}
-
-This will deploy Pilot, Mixer, Ingress-Controller, and Egress-Controller, and the Istio CA (Certificate Authority). These are explained in the next step.
-
-## Check Status
-
-All the services are deployed as Pods. Once they're running, Istio is correctly deployed.
-
-`kubectl get pods -n istio-system`{{execute}}
+![Istio Architecture](./assets/istio-arch1.png)

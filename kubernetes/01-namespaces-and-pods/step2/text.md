@@ -4,7 +4,7 @@ Creating a namespace can be done with a single command. Let's create **dev-servi
 
 Or you can create a YAML file and apply it, just like any other Kubernetes resource.
 
-Look at the file `test-namespace.yaml`{{open}}
+Look at the file `test-namespace.yaml`
 
 ### Create test namespace:
 
@@ -28,4 +28,4 @@ Check that the `test` namespace has been successfully deleted:
 
 `kubectl get namespaces`{{execute}}
 
->**Note:** We are not going to remove ```dev-service1``` namespace as we will use it later in this course.
+>**Note:** We are not going to remove `dev-service1` namespace as we will use it later in this course.

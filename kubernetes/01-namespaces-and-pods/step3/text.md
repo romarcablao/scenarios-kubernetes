@@ -1,5 +1,5 @@
 
-To communicate with the Kubernetes API, we use a CLI tool called ```kubectl```. Most likely, you are also going to leverage configuration files in YAML format in order to provide cluster configuration and create objects.
+To communicate with the Kubernetes API, we use a CLI tool called `kubectl`. Most likely, you are also going to leverage configuration files in YAML format in order to provide cluster configuration and create objects.
 
 In this YAML file, we are going to write our configuration to tell Kubernetes how to deploy and run our Pod.
 
@@ -15,11 +15,11 @@ Kubernetes API Reference provides us with the necessary information to write the
 
 Take a look at the file `pod.yaml`{{open}}
 
-The pod name is ```happypanda``` and it deploys an `nginx` container image from Docker Hub's public registry.
+The pod name is `happypanda` and it deploys an `nginx` container image from Docker Hub's public registry.
 
 ## Create a Pod
 
-By using the ```kubectl``` CLI tool, we authenticate to the Kubernetes API and apply our Pod specification to the Kubernetes Cluster:
+By using the `kubectl` CLI tool, we authenticate to the Kubernetes API and apply our Pod specification to the Kubernetes Cluster:
 
 `kubectl apply -f /pods-manifests/pod.yaml`{{execute}}
 

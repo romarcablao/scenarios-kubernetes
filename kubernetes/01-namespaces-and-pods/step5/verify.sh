@@ -1,3 +1,3 @@
 #!/bin/bash
 
-if kubectl get pod my-pod; then exit 1; fi
+if kubectl get -n dev-service1 pod happypanda; then exit 1; fi

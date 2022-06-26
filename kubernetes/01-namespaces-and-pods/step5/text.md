@@ -1,4 +1,4 @@
-We are going to update our `happypanda` pod running in **dev-service1** namespace and to do that you need to apply the ```pod-update.yaml``` configuration.
+We are going to update our `happypanda` pod running in **dev-service1** namespace and to do that you need to apply the `pod-update.yaml` configuration.
 
 Look at the file `/pod-update.yaml`{{open}}:
 
@@ -8,7 +8,7 @@ Look at the file `/pod-update.yaml`{{open}}:
 
 ### Update the existing Pod 
 
-A pod can be updated by applying a yaml file so let's apply our ```pod-update.yaml``` that includes the above changes:
+A pod can be updated by applying a yaml file so let's apply our `pod-update.yaml` that includes the above changes:
 
 `kubectl apply -f /pods-manifests/pod-update.yaml`{{execute}}
 
@@ -22,7 +22,7 @@ The Pod "happypanda" is invalid: spec: Forbidden: pod updates may not change fie
 
 Ok, let's review the [Kubernetes API Reference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#container-v1-core) and we can find the following statement in containers ports specification:
 
-<p style="text-align:center;"><img src="/contino/courses/kubernetes-basic-concepts/pods/assets/ports.png" alt="Ports"></p>
+![Ports](assets/ports.png)
 
 In Kubernetes, there are some fields that can't be updated. The Kubernetes API Reference can be helpful to highlight some of the API restrictions and the available object specification.
 
@@ -47,12 +47,19 @@ Our happypanda pod is now running with labels, port specification and a new cont
 
 `kubectl get pod -n dev-service1`{{execute}}
 
-### Clean up
 
-Delete pod:
+## Clean up
+
+Delete the pod named `happypanda`
+
+<br>
+<details><summary>Solution</summary>
+<br>
 
 `kubectl delete pod happypanda -n dev-service1`{{execute}}
 
-Delete namespace:
+</details>
+
+Let's also delete the namespace `dev-service1`
 
 `kubectl delete namespace dev-service1`{{execute}}

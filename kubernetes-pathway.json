@@ -53,7 +53,7 @@
         "description": "Introduction to ConfigMaps"
       },      
       {
-        "course_id": "10-secrets",
+        "course_id": "11-secrets",
         "title": "Secrets",
         "description": "Introduction to Secrets"
       },

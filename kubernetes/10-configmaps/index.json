@@ -1,5 +1,5 @@
 {
-  "title": "ConfigMaps",
+  "title": "10. ConfigMaps",
   "description": "In this lab, we will decouple configuration from applications with Kubernetes ConfigMaps",
   "details": {
     "assets": {

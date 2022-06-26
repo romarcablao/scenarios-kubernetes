@@ -1,5 +1,5 @@
 {
-  "title": "09 Persistent Volumes",
+  "title": "09. Persistent Volumes",
   "description": "In this lab, we will create PersistentVolumes, and provide them to Pods via PersistentVolumeClaims",
   "details": {
     "assets": {

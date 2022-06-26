@@ -11,7 +11,7 @@
 
 **Data Files:** `docker-compose.yaml`
 
-A registry is a service for storing and accessing Docker images. [Docker Cloud](https://cloud.docker.com) and [Docker Store](https://store.docker.com) are the best-known hosted registries, which you can use to store public and private images. You can also run your own registry using the open-source [Docker Registry](https://docs.docker.com/registry), which is a Go application in a Alpine Linux container.
+A registry is a service for storing and accessing Docker images. [DockerHub](https://cloud.docker.com) is the best-known hosted registries, which you can use to store public and private images. You can also run your own registry using the open-source [Docker Registry](https://docs.docker.com/registry), which is a Go application in a Alpine Linux container.
 
 ###### What You Will Learn
 
@@ -19,4 +19,4 @@ A registry is a service for storing and accessing Docker images. [Docker Cloud](
 - generate SSL certificates (using Docker!) and run a secure local registry with a friendly domain name;
 - generate encrypted passwords (using Docker!) and run an authenticated, secure local registry over HTTPS with basic auth.
 
-> NOTE: The open-source registry does not have a Web UI, so there's no friendly interface like [Docker Cloud](https://cloud.docker.com) or [Docker Store](https://store.docker.com). Instead there is a [REST API](https://docs.docker.com/registry/spec/api/) you can use to query the registry. For a local registry which has a Web UI and role-based access control, Docker, Inc. has the [Trusted Registry](https://www.docker.com/sites/default/files/Docker%20Trusted%20Registry.pdf) product.
+> NOTE: The open-source registry does not have a Web UI, so there's no friendly interface like [DockerHub](https://cloud.docker.com). Instead there is a [REST API](https://docs.docker.com/registry/spec/api/) you can use to query the registry. For a local registry which has a Web UI and role-based access control, Docker, Inc. has the [Trusted Registry](https://www.docker.com/sites/default/files/Docker%20Trusted%20Registry.pdf) product.

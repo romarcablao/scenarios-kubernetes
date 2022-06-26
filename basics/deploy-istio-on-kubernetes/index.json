@@ -14,7 +14,6 @@
             },
             {
                 "title": "Deploy Istio",
-                "courseData": "ensure-configured.sh",
                 "text": "step2.md"
             },
             {

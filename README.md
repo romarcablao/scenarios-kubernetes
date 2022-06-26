@@ -4,6 +4,12 @@
 Killercoda migration:
 
 ### Docker
+00 Building Container Images  https://www.katacoda.com/aossama/scenarios/containers-with-docker-102
+00 Deploying COntainers: Wordpress https://www.katacoda.com/aossama/scenarios/containers-with-docker-201
+
+
+
+
 1. Deploy Static HTML Website as Container
 2. Dockerizing Node.js
 3. Managing Log Files

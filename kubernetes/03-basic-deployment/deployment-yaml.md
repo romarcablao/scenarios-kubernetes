@@ -1,6 +1,6 @@
 Because you have already created a deployment earlier called `nginx-deployment`, we need to delete it before we can create a new deployment with the YAML manifest:
 
-`kubectl delete deployment nginx-deployment -n contino`{{execute}}
+`kubectl delete deployment nginx-deployment -n development`{{execute}}
 
 Before we create the new deployment, let's inspect the file:
 
@@ -14,6 +14,6 @@ Now create the deployment:
 
 Get the deployment:
 
-`kubectl get deployments -n contino -o yaml`{{execute}}
+`kubectl get deployments -n development -o yaml`{{execute}}
 
 If you go back to the previous chapter where we created the deployment manually, you'll see that the output is very similar to the output above.

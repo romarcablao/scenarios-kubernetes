@@ -14,17 +14,17 @@ Now create the replication controller:
 
 Check for RCs:
 
-`kubectl get rc -n contino`{{execute}}
+`kubectl get rc -n development`{{execute}}
 
 Now check for pods:
 
-`kubectl get po -n contino`{{execute}}
+`kubectl get po -n development`{{execute}}
 
 As you can see, there are now 3 pods, as per the replication controller manifest that we just created.
 
 To delete a replication controller:
 
-`kubectl delete rc nginx -n contino`{{execute}}
+`kubectl delete rc nginx -n development`{{execute}}
 
 ### Scaling RCs
 

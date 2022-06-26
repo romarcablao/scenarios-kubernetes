@@ -1,8 +1,6 @@
 {
   "title": "03. Basic Deployments",
   "description": "Create, manage and delete basic Deployments",
-  "difficulty": "beginner",
-  "time": "5-10 minutes",
   "details": {
     "steps": [
       { "title": "Creating a deployment through kubectl", "text": "kubectl-run-deployment.md"},
@@ -20,12 +18,6 @@
     "assets": {
       "host01": [{"file": "*.yaml", "target": "/manifests"}]
     }
-  },
-  "environment": {
-    "uilayout": "editor-terminal",
-    "uieditorpath": "/manifests",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n",
-    "icon": "fa-kubernetes"
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"

@@ -1,8 +1,6 @@
 {
   "title": "06. Manage DaemonSets",
   "description": "Create, manage and manipulate DaemonSets in this scenario.",
-  "difficulty": "beginner",
-  "time": "10-15 minutes",
   "details": {
     "steps": [
       { "title": "Create a DaemonSet", "text": "create-daemonset.md" },
@@ -20,12 +18,6 @@
     "assets": {
       "master": [{"file": "*.yaml", "target": "/manifests"}]
     }
-  },
-  "environment": {
-    "uilayout": "editor-terminal",
-    "uieditorpath": "/manifests",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n",
-    "icon": "fa-kubernetes"
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"

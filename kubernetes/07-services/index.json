@@ -1,8 +1,6 @@
 {
   "title": "07. Manage Services",
   "description": "Manage Services in this scenario.",
-  "difficulty": "beginner",
-  "time": "10-15 minutes",
   "details": {
     "steps": [
       { "title": "Launch Deployment", "text": "launch-deployment.md" },
@@ -21,12 +19,6 @@
     "assets": {
       "host01": [{"file": "*.yml", "target": "/manifests"}]
     }
-  },
-  "environment": {
-    "uilayout": "editor-terminal",
-    "uieditorpath": "/manifests",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n",
-    "icon": "fa-kubernetes"
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"

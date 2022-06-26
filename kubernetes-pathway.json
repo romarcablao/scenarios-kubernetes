@@ -1,6 +1,5 @@
 {
     "title": "Kubernetes",
-    "icon": "fa-kubernetes",
     "description": "Kubernetes Basics",
     "courses": [  
       {
@@ -57,11 +56,6 @@
         "course_id": "11-debugging",
         "title": "Debugging",
         "description": "Learn debugging"
-      },
-      {
-        "course_id": "12-challenge",
-        "title": "Challenge",
-        "description": "Let's apply what you've learned!"
       }
      ]
 }

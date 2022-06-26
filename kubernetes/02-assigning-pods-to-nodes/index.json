@@ -20,9 +20,6 @@
       "host01": [{"file": "*.yaml", "target": "/manifests"}]
     }
   },
-  "environment": {
-    "uilayout": "terminal"
-  },
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"
   }

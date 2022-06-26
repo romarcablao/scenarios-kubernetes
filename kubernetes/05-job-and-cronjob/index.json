@@ -1,8 +1,6 @@
 {
   "title": "05. Jobs, Init Containers and Cron Jobs",
   "description": "Learn how to manage Jobs, Init Containers and Cron Jobs",
-  "difficulty": "beginner",
-  "time": "5 minutes",
   "details": {
     "steps": [
       { "title": "Jobs", "text": "jobs.md"},
@@ -20,11 +18,6 @@
     "assets": {
       "host01": [{"file": "*.yaml", "target": "/manifests"}]
     }
-  },
-  "environment": {
-    "uilayout": "editor-terminal",
-    "uieditorpath": "/manifests",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
   },
   "backend": {
     "imageid": "kubernetes"

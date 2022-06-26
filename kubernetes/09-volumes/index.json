@@ -1,8 +1,6 @@
 {
   "title": "09. Volumes",
   "description": "Manage Volumes",
-  "difficulty": "beginner",
-  "time": "5 minutes",
   "details": {
     "steps": [
       { "title": "Create a Daemon Set", "text": "volumes.md"}
@@ -17,10 +15,6 @@
     "assets": {
       "host01": [{"file": "*", "target": "/root"}]
     }
-  },
-  "environment": {
-    "uilayout": "editor-terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"

@@ -41,7 +41,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "host01": [{"file": "*.yaml", "target": "/pods-manifests"}]
+      "host01": [{"file": "*.yaml", "target": "/root/pods-manifests"}]
     }
   },
   "backend": {

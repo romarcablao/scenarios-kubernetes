@@ -1,0 +1,16 @@
+{
+    "title": "Docker",
+    "description": "Docker Basics",
+    "courses": [  
+      {
+        "course_id": "orchestration-using-docker-compose",
+        "title": "Docker Compose Basics",
+        "description": "One of Docker's effective tools is Docker Compose, and you can learn the very basics here.",
+      },
+      {
+        "course_id": "private-registry-with-ssl",
+        "title": "Private Registry with SSL",
+        "description": "Learning to deploy a local registry starts here, and it couldn't be any easier."
+      }
+     ]
+}

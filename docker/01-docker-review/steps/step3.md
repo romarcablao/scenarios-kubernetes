@@ -1,7 +1,8 @@
 The below commands will work with images to create and list containers.
 
-Take inventory of current images and containers  `docker image ls`  
-`docker container ls`{{exec}}
+Take inventory of current images and containers  
+- `docker image ls`{{exec}}  
+- `docker container ls`{{exec}}
 
 Run hello-world image `docker container run hello-world`{{exec}} Notice how the image did not need to be downloaded since we already downloaded it in step 2.
 

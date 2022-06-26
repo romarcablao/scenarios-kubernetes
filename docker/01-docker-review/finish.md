@@ -1,1 +1,1 @@
-Congratulations! You can start the next exercise in this series.
+Alright! Let's jump off with other labs!

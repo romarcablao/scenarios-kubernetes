@@ -1,7 +1,7 @@
 ```
 mkdir -p /prometheus/data
 docker run -d --net=host \
-    -v /home/scrapbook/tutorial/prometheus.yml:/etc/prometheus/prometheus.yml \
+    -v /root/prometheus.yml:/etc/prometheus/prometheus.yml \
     -v /prometheus/data:/prometheus \
     --name prometheus-server \
     prom/prometheus

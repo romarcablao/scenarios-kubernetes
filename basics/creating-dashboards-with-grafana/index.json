@@ -28,7 +28,7 @@
             "text": "finish.md"
         },
         "assets": {
-          "host01": [{"file": "./assets/prometheus.yml", "target": "/root/"}]
+          "host01": [{"file": "prometheus.yml", "target": "/root/"}]
         }
     },
     "backend": {

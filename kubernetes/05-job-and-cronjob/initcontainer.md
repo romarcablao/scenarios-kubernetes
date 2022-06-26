@@ -2,7 +2,7 @@ An [Init Container](https://kubernetes.io/docs/concepts/workloads/pods/init-cont
 
 ## Create a Pod with an init container
 
-Take a look at the file `init-container.yaml`{{open}}. 
+Take a look at the file `init-container.yaml`. 
 
 This example runs an `init-container` which creates a `helloworld` file in a volume. The application pod will be scheduled if the `helloworld` file exist at a specific path and the pod can access it.
 

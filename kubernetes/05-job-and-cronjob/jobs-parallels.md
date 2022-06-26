@@ -2,7 +2,7 @@ To create a parallel job we can use `spec.parallelism` to set how many pods we w
 
 ## Create Countdown Parallel Job
 
-Inspect the file `jobs-parallels.yaml`{{open}}.
+Inspect the file `jobs-parallels.yaml`.
 
 This is the same `countdown` job we used in the previous scenario but we have added `spec.parallelism` and `spec.completions` parameters.
 

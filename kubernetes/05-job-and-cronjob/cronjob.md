@@ -2,7 +2,7 @@ Written in a `Cron` format, a [Cron Job resource](https://kubernetes.io/docs/con
 
 ## Create Hello Cron Job
 
-Take a look at the file `cronjob.yaml`{{open}}. This example create a job every minute which prints the current time and a hello message.
+Take a look at the file `cronjob.yaml`. This example create a job every minute which prints the current time and a hello message.
 
 `kubectl apply -f /manifests/cronjob.yaml`{{execute}}
 

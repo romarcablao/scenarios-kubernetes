@@ -1,4 +1,4 @@
-Take a look at the file `pod-namespace.yaml`{{open}}
+Take a look at the file `pod-namespace.yaml`
 
 Notice that `happypanda` pod has been configured to be scheduled in the **dev-service1** namespace.
 

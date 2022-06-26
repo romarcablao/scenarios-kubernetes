@@ -8,7 +8,7 @@ Pods created by jobs are not automatically deleted. Keeping the pods around allo
 
 ## Create Countdown Job
 
-Take a look at the file `job.yaml`{{open}}. 
+Take a look at the file `job.yaml`. 
 
 This example creates a job which runs a bash command to count down from 10 to 1.
 

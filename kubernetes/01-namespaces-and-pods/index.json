@@ -30,7 +30,8 @@
       },
       {
         "title": "Let's practice",
-        "text": "step6/text.md"
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
       }
     ],
     "finish": {

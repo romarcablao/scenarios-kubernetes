@@ -3,19 +3,24 @@
     "description": "Docker Basics",
     "courses": [
       {
-        "course_id": "docker-review",
-        "title": "01. Docker Review",
-        "description": "Let's have a quick review!",
+        "course_id": "01-docker-review",
+        "title": "Docker Review",
+        "description": "Let's have a quick review!"
       },
       {
-        "course_id": "orchestration-using-docker-compose",
-        "title": "Docker Compose Basics",
-        "description": "One of Docker's effective tools is Docker Compose, and you can learn the very basics here.",
+        "course_id": "02-docker-networks",
+        "title": "Docker Networks",
+        "description": "In this lab, we will explore docker netoworking."
       },
       {
-        "course_id": "private-registry-with-ssl",
+        "course_id": "03-private-registry-with-ssl",
         "title": "Private Registry with SSL",
         "description": "Learning to deploy a local registry starts here, and it couldn't be any easier."
+      },
+      {
+        "course_id": "04-orchestration-using-docker-compose",
+        "title": "Docker Compose Basics",
+        "description": "One of Docker's effective tools is Docker Compose, and you can learn the very basics here."
       }
      ]
 }

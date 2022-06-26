@@ -1,0 +1,27 @@
+{
+  "title": "02. Docker Networks",
+  "description": "In this lab, we will explore docker netoworking",
+  "details": {
+    "steps": [
+      {
+        "title":"Bridge Network",
+        "text": "step1.md"
+      },
+      {
+        "title":"Creating Bridge Network",
+        "text": "step2.md"
+      },
+      {
+        "title":"Manual Port Mapping",
+        "text": "step3.md"
+      },
+      {
+        "title":"Auto Port Mapping",
+        "text": "step4.md"
+      }
+    ]
+  },
+	"backend": {
+		"imageid": "ubuntu"
+	}
+}

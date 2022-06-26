@@ -1,39 +1,11 @@
-To showcase Istio, a BookInfo web application has been created. This sample deploys a simple application composed of four separate microservices which will be used to demonstrate various features of the Istio service mesh.
+To collect and view metrics provided by Mixer, install Prometheus and Grafana addons.
 
-<br>
+Prometheus gathers metrics from the Mixer. `kubectl apply -f /root/istio-1.13.3/samples/addons/prometheus.yaml`{{execute}}
 
-### Sidecar injection
-Now we enable the Istio sidecar injection for the `default` *Namespace*:
-
-```plain
-kubectl label namespace default istio-injection=enabled --overwrite
-```{{exec}}
-
-
-### Install app
-Next we install the [bookinfo sample](https://github.com/istio/istio/tree/master/samples/bookinfo):
-
-```plain
-kubectl apply -f /root/istio-1.13.3/samples/bookinfo/networking/virtual-service-all-v1.yaml
-kubectl apply -f /root/istio-1.13.3/samples/bookinfo/networking/bookinfo-gateway.yaml
-kubectl apply -f /root/istio-1.13.3/samples/bookinfo/networking/destination-rule-all.yaml
-kubectl apply -f /root/istio-1.13.3/samples/bookinfo/platform/kube/bookinfo.yaml
-kubectl wait deploy --all --for condition=available --timeout=1h
-```{{exec}}
+Grafana produces dashboards based on the data collected by Prometheus. `kubectl apply -f istio-1.13.3/samples/addons/grafana.yaml`{{execute}}
 
 ## Check Status
 
-`kubectl get pods`{{execute}}
+As with Istio, these addons are deployed via Pods.
 
-### Access app
-Now we port-forward to the Istio ingressgateway service:
-
-```plain
-kubectl port-forward -n istio-system --address 0.0.0.0 service/istio-ingressgateway 1234:80
-```{{exec}}
-
-Finally [ACCESS]({{TRAFFIC_HOST1_1234}}/productpage) the Bookinfo app through Istio <small>(or [select the port here]({{TRAFFIC_SELECTOR}}))</small>.
-
-<br>
-
-The architecture of the application is described in the next step.
+`kubectl get pods -n istio-system`{{execute}}

@@ -13,41 +13,44 @@
                 "text": "step1.md"
             },
             {
-                "title": "Istio Architecture",
+                "title": "Deploy Istio",
                 "text": "step2.md"
             },
             {
-                "title": "Deploy Istio Metrics and Tracing",
+                "title": "Istio Architecture",
                 "text": "step3.md"
             },
             {
-                "title": "Deploy Sample Application",
+                "title": "Deploy Istio Metrics and Tracing",
                 "text": "step4.md"
             },
             {
-                "title": "Bookinfo Architecture",
+                "title": "Deploy Sample Application",
                 "text": "step5.md"
             },
             {
-                "title": "Control Routing",
+                "title": "Bookinfo Architecture",
                 "text": "step6.md"
             },
             {
-                "title": "Access Metrics",
+                "title": "Control Routing",
                 "text": "step7.md"
+            },
+            {
+                "title": "Access Metrics",
+                "text": "step8.md"
             }
         ],
         "intro": {
             "text": "intro.md",
-            "credits": ""
+            "background": "init/background.sh"
         },
         "finish": {
             "text": "finish.md"
         },
         "assets": {
           "host01": [
-            {"file": "wait-background.sh", "target": "/init", "chmod": "+x"},
-            {"file": "demo.yaml", "target": "/tmp", "chmod": "+x"}
+            {"file": "istio-course.yaml", "target": "/tmp", "chmod": "+x"}
           ]
         }
     },

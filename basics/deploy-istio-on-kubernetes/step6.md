@@ -1,43 +1,29 @@
-One of the main features of Istio is its traffic management. As a Microservice architectures scale, there is a requirement for more advanced service-to-service communication control.
+The BookInfo sample application deployed is composed of four microservices:
 
-## User Based Testing
+* The _productpage_ microservice calls the details and reviews microservices to populate the page.
+* The _details_ microservice contains book information.
+* The _reviews_ microservice contains book reviews. It also calls the ratings microservice.
+* The _ratings_ microservice contains book ranking information that accompanies a book review.
 
-One aspect of traffic management is controlling traffic routing based on the HTTP request, such as user agent strings, IP address or cookies.
+There are 3 versions of the _reviews_ microservice:
 
-The example below will send all traffic for the user "jason" to the reviews:v2, meaning they'll only see the black stars.
+* Version _v1_ doesn’t call the ratings service.
+* Version _v2_ calls the ratings service and displays each rating as 1 to 5 black stars.
+* Version _v3_ calls the ratings service and displays each rating as 1 to 5 red stars.
 
-`cat /root/istio-1.13.3/samples/bookinfo/networking/virtual-service-reviews-test-v2.yaml`{{execute}}
+The services communicate over HTTP using DNS for service discovery. An overview of the architecture is shown below.
 
-Similarly to deploying Kubernetes configuration, routing rules can be applied using _istioctl_.
+![BookInfo Architecture](./assets/bookinfo-noistio.png)
 
-`kubectl apply -f /root/istio-1.13.3/samples/bookinfo/networking/virtual-service-reviews-test-v2.yaml`{{execute}}
 
-Visit the [product page](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].papa.r.killercoda.com/productpage) and signin as a user jason (password jason)
+<br>
 
-## Traffic Shaping for Canary Releases
+To run the sample with Istio requires no changes to the application itself. Instead, you simply need to configure and run the services in an Istio-enabled environment, with Envoy sidecars injected along side each service. The resulting deployment will look like this:
 
-The ability to split traffic for testing and rolling out changes is important. This allows for A/B variation testing or deploying canary releases.
+![BookInfo Architecture with Istio](./assets/bookinfo-withistio.png)
 
-The rule below ensures that 50% of the traffic goes to reviews:v1 (no stars), or reviews:v3 (red stars).
+All of the microservices will be packaged with an Envoy sidecar that intercepts incoming and outgoing calls for the services, providing the hooks needed to externally control, via the Istio control plane, routing, telemetry collection, and policy enforcement for the application as a whole.
 
-`cat /root/istio-1.13.3/samples/bookinfo/networking/virtual-service-reviews-50-v3.yaml`{{execute}}
+<br>
 
-Likewise, this is deployed using _istioctl_.
-
-`istioctl create -f /root/istio-1.13.3/samples/bookinfo/networking/virtual-service-reviews-50-v3.yaml`{{execute}}
-
-_Note:_ The weighting is not round robin, multiple requests may go to the same service.
-
-## New Releases
-
-Given the above approach, if the canary release were successful then we'd want to move 100% of the traffic to reviews:v3.
-
-`cat /root/istio-1.13.3/samples/bookinfo/networking/virtual-service-reviews-v3.yaml`{{execute}}
-
-This can be done by updating the route with new weighting and rules.
-
-`istioctl replace -f /root/istio-1.13.3/samples/bookinfo/networking/virtual-service-reviews-v3.yaml`{{execute}}
-
-## List All Routes
-
-It's possible to get a list of all the rules applied using `istioctl get routerules`{{execute}}
+The source code for the application is available on [Github](https://github.com/istio/istio/tree/master/samples/bookinfo)

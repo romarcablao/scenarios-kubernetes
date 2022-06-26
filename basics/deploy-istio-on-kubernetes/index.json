@@ -9,7 +9,7 @@
     "details": {
         "steps": [
             {
-                "title": "Install Istioctl and Deploy Istio Core Component",
+                "title": "Getting Started!",
                 "text": "step1.md"
             },
             {

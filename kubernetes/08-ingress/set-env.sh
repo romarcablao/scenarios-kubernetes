@@ -1,2 +1,1 @@
-mkdir /manifests
 cd /manifests

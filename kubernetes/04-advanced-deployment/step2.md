@@ -13,7 +13,7 @@ kubectl run NAME --image=image
 
 To create a simple Kubernetes deployment from the command-line:
 
-`kubectl run tutum --image=tutum/hello-world --port 80`{{execute}}
+`kubectl create deployment tutum --image=tutum/hello-world --port 80`{{execute}}
 
 Congrats, you have just created your first Deployment. The `run` command created a Deplyment which automatically performed a few things for you:
 
@@ -25,7 +25,7 @@ Basically, it created all of the objects we defined, which include Pods and Repl
 
 Let's think back, what is the difference between this command, and how we create Pods on the CLI?
 
-`--restatart=Never`
+`--restart=Never`
 
 To verify that the command created a Deployment:
 

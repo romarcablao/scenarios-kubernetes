@@ -1,6 +1,6 @@
 {
-  "title": "Kubernetes Deployments",
-  "description": "Introduction to Deployments",
+  "title": "05. Advanced Deployment",
+  "description": "Deployments Continuation",
   "details": {
     "assets": {
       "host01": [

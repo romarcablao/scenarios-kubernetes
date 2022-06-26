@@ -1,5 +1,3 @@
-## Deploy Istio Core Component
-
 Let's then apply all istio manifest using `istioctl`.  
 This will deploy Pilot, Mixer, Ingress-Controller, and Egress-Controller, and the Istio CA (Certificate Authority). These are explained in the next step.
 
@@ -7,6 +5,8 @@ This will deploy Pilot, Mixer, Ingress-Controller, and Egress-Controller, and th
 mv /tmp/istio-course.yaml /root/istio-${ISTIO_VERSION}/manifests/profiles/
 istioctl install --set profile=istio-course -y --manifests=/root/istio-${ISTIO_VERSION}/manifests
 ```{{exec}}
+
+<br>
 
 ## Check Status
 

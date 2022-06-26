@@ -15,9 +15,9 @@ Check the status of the cronjob:
 Immediatly after creating a cron job, the `LAST-SCHEDULE` column will have no value (`<none>`). This indicates that the CronJob hasn't run yet.
 
 `
-master $ kubectl get cronjob hello
-NAME      SCHEDULE      SUSPEND   ACTIVE    LAST SCHEDULE   AGE
-hello     */1 * * * *   False     0         <none>          8s
+master $ kubectl get cronjob hello  
+NAME      SCHEDULE      SUSPEND   ACTIVE    LAST SCHEDULE   AGE  
+hello     */1 * * * *   False     0         <none>          8s  
 `
 Once the `LAST-SCHEDULE` column gets a value, it indicates that the CronJobs is now scheduled to run:
 

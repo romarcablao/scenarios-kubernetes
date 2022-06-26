@@ -1,8 +1,6 @@
-## Let's practice!
+### A. Create namespace: `cloudnative`
 
-### Create namespace: `cloudnative`
-
-### Create a `pod` with the following constraints:
+### B. Create a `pod` with the following constraints:
 1. Pod name: `jenkins`
 2. Deploy pod in a `cloudnative` namespace
 3. Add additional labels:

@@ -2,8 +2,6 @@
   "pathwayTitle": "Docker Compose Basics",
   "title": "Docker Compose Basics",
   "description": "One of Docker's effective tools is Docker Compose, and you can learn the very basics here.",
-  "difficulty": "Intermediate",
-  "time": "15-20 minutes",
   "details": {
     
     "steps": [
@@ -45,16 +43,8 @@
     }
 
   },
-    
-  "environment": {
-	"showdashboard": true,
-	"dashboards": [{"name": "Browser", "port": 5000}],
-    "uilayout": "editor-terminal",
-	"uimessage1": "\u001b[32mYour Interactive Host Terminal.\u001b[m\r\n"
-	},
-
 	"backend": {
-		"imageid": "docker"
-	}
+		"imageid": "ubuntu"
   }
+}
  

@@ -1,7 +1,7 @@
-# Kubernetes Scenarios
+# Cloud Native Basics
 
 ## TODO
-Katakoda migration:
+Killercoda migration:
 
 ### Docker
 1. Deploy Static HTML Website as Container

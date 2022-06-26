@@ -6,12 +6,18 @@ validate_k8s_pod_label=$(kubectl -n cloudnative get pod --field-selector=status.
 
 if [ $validate_k8s_ns -le 0 ]; then
   echo "Hint: Make sure have the required namespace created.."
+else
+  exit 1
 fi
 
 if [ $validate_k8s_pod -le 0 ]; then
   echo "Hint: Try checking which namespace your pod is running. Is it in 'Running' state?"
+else
+  exit 1
 fi
 
 if [ $validate_k8s_pod_label -le 0 ]; then
   echo "Hint: Hmmm... how 'bout the labels?"
+else
+  exit 1
 fi

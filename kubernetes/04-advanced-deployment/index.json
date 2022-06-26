@@ -10,7 +10,7 @@
         },
         {
           "file": "resources/*",
-          "target": "/root/resources"
+          "target": "/root"
         }
       ]
     },

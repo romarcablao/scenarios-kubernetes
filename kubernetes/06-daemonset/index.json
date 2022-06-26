@@ -16,7 +16,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "host1": [{"file": "*.yaml", "target": "/manifests"}]
+      "host01": [{"file": "*.yaml", "target": "/manifests"}]
     }
   },
   "backend": {

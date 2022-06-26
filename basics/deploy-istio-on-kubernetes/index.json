@@ -39,13 +39,15 @@
         ],
         "intro": {
             "text": "intro.md",
-            "background": "init/background.sh"
+            "background": "init/background.sh",
+            "foreground": "init/foreground.sh"
         },
         "finish": {
             "text": "finish.md"
         },
         "assets": {
           "host01": [
+            {"file": "wait-background.sh", "target": "/ks", "chmod": "+x"},
             {"file": "istio-course.yaml", "target": "/tmp", "chmod": "+x"}
           ]
         }

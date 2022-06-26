@@ -20,7 +20,7 @@ This is what manifests need to be tainted with in order to be ran on master node
 
 Now check to see if an additional pod has been created. Remember - a DaemonSet schedules a pod to every node, so there should be two pods created:
 
-`kubectl get po -n contino -l app=nginx -o wide`{{execute}}
+`kubectl get po -n development -l app=nginx -o wide`{{execute}}
 
 If there's two pods - great. That means that the tolerations have worked and we are now running across two nodes.
 
@@ -28,14 +28,14 @@ If there's two pods - great. That means that the tolerations have worked and we 
 
 Find the pod IP address for the newly created pod on the master node:
 
-`kubectl get po -n contino -l app=nginx -o 'jsonpath={.items[1].status.podIP}'; echo`{{execute}}
+`kubectl get po -n development -l app=nginx -o 'jsonpath={.items[1].status.podIP}'; echo`{{execute}}
 
 Notice that it's different to the IP address that we curl'ed before.
 
 Now curl the new pod's IP address:
 
 ```
-curl `kubectl get po -n contino -l app=nginx -o 'jsonpath={.items[1].status.podIP}'`
+curl `kubectl get po -n development -l app=nginx -o 'jsonpath={.items[1].status.podIP}'`
 ```{{execute}}
 
 You should see a similar result to the one in the previous chapter:

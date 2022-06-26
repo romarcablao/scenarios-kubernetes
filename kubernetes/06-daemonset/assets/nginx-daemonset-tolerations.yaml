@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: DaemonSet
 metadata:
   name: nginx
-  namespace: contino
+  namespace: development
   labels:
     app: nginx
     name: nginx

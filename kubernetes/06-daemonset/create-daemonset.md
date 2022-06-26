@@ -12,7 +12,7 @@ Now we've created the namespace (and other prerequisites), let's inspect the man
 
 `cat nginx-daemonset.yaml; echo`{{execute}}
 
-As you can see, we're running a basic DaemonSet - in the `contino` namespace - which exposes port `80` inside the container.
+As you can see, we're running a basic DaemonSet - in the `development` namespace - which exposes port `80` inside the container.
 
 Create it:
 
@@ -20,4 +20,4 @@ Create it:
 
 Now check the status of the DaemonSet:
 
-`kubectl get daemonsets -n contino`{{execute}}
+`kubectl get daemonsets -n development`{{execute}}

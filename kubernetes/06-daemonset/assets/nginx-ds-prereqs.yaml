@@ -2,15 +2,15 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: contino
+  name: development
   labels:
-    name: contino
+    name: development
 
 ---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: nginx-svc-acct
-  namespace: contino
+  namespace: development
   labels:
     name: nginx-svc-acct

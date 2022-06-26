@@ -1,19 +1,59 @@
 {
-  "title": "04. Advanced Deployments",
-  "description": "Manage Advanced Deployments",
+  "title": "Kubernetes Deployments",
+  "description": "Introduction to Deployments",
   "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "answers/*",
+          "target": ".answers"
+        },
+        {
+          "file": "resources/*",
+          "target": "/root/newresources"
+        }
+      ]
+    },
     "steps": [
-      { "title": "Create a Daemon Set", "text": "deployment-rolling-update.md"}
+      {
+        "title": "ReplicaSets",
+        "text": "step1.md"
+      },
+      {
+        "title": "Deployments on the CLI",
+        "text": "step2.md"
+      },
+      {
+        "title": "Deployment Manifests",
+        "text": "step3.md"
+      },
+      {
+        "title": "Interacting with Deployments",
+        "text": "step4.md"
+      },
+      {
+        "title": "Configuring Tutum",
+        "text": "step5.md"
+      },
+      {
+        "title": "Configuring NGiNX",
+        "text": "step6.md"
+      },
+      {
+        "title": "Configuring Minecraft",
+        "text": "step7.md"
+      },
+      {
+        "title": "Rolling Updates and Rollbacks",
+        "text": "step8.md"
+      }
     ],
     "intro": {
       "text": "intro.md",
-      "code": "set-env.sh"
+      "courseData": "startup.sh"
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "host01": [{"file": "*", "target": "/root"}]
     }
   },
   "backend": {

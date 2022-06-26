@@ -15,6 +15,9 @@ apiVersion: apps/v1
 metadata:
   name: nginx-default-backend
 spec:
+  selector:
+    matchLabels:
+      app: nginx-default-backend
   replicas: 1
   template:
     metadata:

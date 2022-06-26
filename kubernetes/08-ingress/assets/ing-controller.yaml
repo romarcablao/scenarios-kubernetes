@@ -17,10 +17,13 @@ spec:
 ---
 
 kind: Deployment
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 metadata:
   name: ingress-nginx
 spec:
+  selector:
+    matchLabels:
+      app: ingress-nginx
   replicas: 1
   template:
     metadata:

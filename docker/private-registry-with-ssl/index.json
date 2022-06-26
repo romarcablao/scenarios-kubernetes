@@ -35,22 +35,6 @@
             {
                 "title": "Accessing the Secure Registry",
                 "text": "step8.md"
-            },
-            {
-                "title": "Usernames and Passwords",
-                "text": "step9.md"
-            },
-            {
-                "title": "Running an Authenticated Secure Registry",
-                "text": "step10.md"
-            },
-            {
-                "title": "Authenticating with the Registry",
-                "text": "step11.md"
-            },
-            {
-                "title": "Using Docker Compose to Start the Registry",
-                "text": "step12.md"
             }
         ],
         "intro": {

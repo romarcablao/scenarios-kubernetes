@@ -8,8 +8,8 @@
         "description": "Let's have a quick review!"
       },
       {
-        "course_id": "02-docker-networks",
-        "title": "Docker Networks",
+        "course_id": "02-docker-network",
+        "title": "Docker Network",
         "description": "In this lab, we will explore docker networking."
       },
       {

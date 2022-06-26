@@ -19,6 +19,9 @@ master $ kubectl get cronjob hello
 NAME      SCHEDULE      SUSPEND   ACTIVE    LAST SCHEDULE   AGE  
 hello     */1 * * * *   False     0         <none>          8s  
 `
+
+<br>
+
 Once the `LAST-SCHEDULE` column gets a value, it indicates that the CronJobs is now scheduled to run:
 
 `kubectl get cronjob --watch`{{execute}}

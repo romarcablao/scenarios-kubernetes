@@ -5,12 +5,8 @@
     "assets": {
       "host01": [
         {
-          "file": "answers/*",
-          "target": "/.answers"
-        },
-        {
-          "file": "resources/*",
-          "target": "/root/newresources"
+          "file": "*",
+          "target": "/root/resources"
         }
       ]
     },

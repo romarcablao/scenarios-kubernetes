@@ -10,7 +10,7 @@
       {
         "course_id": "02-docker-networks",
         "title": "Docker Networks",
-        "description": "In this lab, we will explore docker netoworking."
+        "description": "In this lab, we will explore docker networking."
       },
       {
         "course_id": "03-private-registry-with-ssl",

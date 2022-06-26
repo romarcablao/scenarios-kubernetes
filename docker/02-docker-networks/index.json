@@ -1,6 +1,6 @@
 {
   "title": "02. Docker Networks",
-  "description": "In this lab, we will explore docker netoworking",
+  "description": "In this lab, we will explore docker networking",
   "details": {
     "steps": [
       {

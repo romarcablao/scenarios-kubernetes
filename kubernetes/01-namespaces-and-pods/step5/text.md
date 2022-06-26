@@ -10,7 +10,7 @@ Look at the file `/pod-update.yaml`{{open}}:
 
 A pod can be updated by applying a yaml file so let's apply our `pod-update.yaml` that includes the above changes:
 
-`kubectl apply -f /pods-manifests/pod-update.yaml`{{execute}}
+`kubectl apply -f /root/pods-manifests/pod-update.yaml`{{execute}}
 
 ### Did it work? What happened?
 
@@ -37,7 +37,7 @@ Delete the pod:
 
 Apply the yaml file:
 
-`kubectl apply -f /pods-manifests/pod-update.yaml`{{execute}}
+`kubectl apply -f /root/pods-manifests/pod-update.yaml`{{execute}}
 
 Check it out:
 

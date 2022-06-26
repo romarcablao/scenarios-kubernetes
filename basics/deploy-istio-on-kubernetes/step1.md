@@ -20,16 +20,19 @@ export PATH=/root/istio-${ISTIO_VERSION}/bin:$PATH
 
 Hmmm, does the installation succedded? Let's check with this command `istioctl version`{{exec}}.
 
+<br>
+
 ## Deploy Istio Core Component
 
-Let's then apply all istio manifest using `istioctl`.
+Let's then apply all istio manifest using `istioctl`.  
+This will deploy Pilot, Mixer, Ingress-Controller, and Egress-Controller, and the Istio CA (Certificate Authority). These are explained in the next step.
 
 ```bash
 mv /tmp/demo.yaml /root/istio-${ISTIO_VERSION}/manifests/profiles/
 istioctl install --set profile=demo -y --manifests=/root/istio-${ISTIO_VERSION}/manifests
 ```{{exec}}
 
-This will deploy Pilot, Mixer, Ingress-Controller, and Egress-Controller, and the Istio CA (Certificate Authority). These are explained in the next step.
+<br>
 
 ## Check Status
 

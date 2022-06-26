@@ -23,7 +23,7 @@ Now let's inspect the deployment that we've just created:
 `kubectl get deployment nginx-deployment -n development -o yaml`{{execute}}
 
 ```
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
@@ -35,7 +35,7 @@ metadata:
   name: nginx-deployment
   namespace: development
   resourceVersion: "849"
-  selfLink: /apis/extensions/v1beta1/namespaces/development/deployments/nginx-deployment
+  selfLink: /apis/apps/v1/namespaces/development/deployments/nginx-deployment
   uid: 035c4414-9a70-11e8-a7a6-0242ac110067
 ```
 

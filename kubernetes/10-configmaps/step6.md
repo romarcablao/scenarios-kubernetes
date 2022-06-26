@@ -59,7 +59,7 @@ Now, we can run this pod:
 
 Now that we've got the Pod running healthy, let's exec into it, and see what's there:
 
-`kubectl exec -t -i redis redis-cli`{{execute}}
+`kubectl exec -t -i redis -- redis-cli`{{execute}}
 
 Now, we're using the redis-cli inside of the Redis pod. Let's get the data we configured in our Redis ConfigMap.
 

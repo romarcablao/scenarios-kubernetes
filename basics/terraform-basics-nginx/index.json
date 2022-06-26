@@ -1,7 +1,7 @@
 {
   "id": "terraform-basics-nginx",
-  "title": "Terraform Tutorial",
-  "description": "A 60 second Terraform tutorial with just the basics",
+  "title": "Terraform Basics",
+  "description": "Terraform tutorial with just the basics",
   "icon": "fa-terraform",
   "details": {
     "intro": {

@@ -48,12 +48,17 @@
         "description": "Introduction to Volumes"
       },
       {
-        "course_id": "10-configmap-and-secrets",
-        "title": "ConfigMaps and Secrets",
-        "description": "Introduction to ConfigMaps and Secrets"
+        "course_id": "10-configmaps",
+        "title": "ConfigMaps",
+        "description": "Introduction to ConfigMaps"
+      },      
+      {
+        "course_id": "10-secrets",
+        "title": "Secrets",
+        "description": "Introduction to Secrets"
       },
       {
-        "course_id": "11-debugging",
+        "course_id": "12-debugging",
         "title": "Debugging",
         "description": "Learn debugging"
       }

@@ -1,9 +1,6 @@
 {
-    "pathwayTitle": "Prometheus",
     "title": "Creating Dashboards with Prometheus and Grafana",
     "description": "Learn how to dashboard Prometheus metrics with Grafana",
-    "difficulty": "Intermediate",
-    "time": "10-15 minutes",
     "details": {
         "steps": [
             {
@@ -24,22 +21,14 @@
             }
         ],
         "intro": {
-            "text": "intro.md",
-            "courseData": "courseBase.sh",
-            "credits": ""
+            "text": "intro.md"
         },
         "finish": {
             "text": "finish.md"
         },
         "assets": {
-          "host01": [{"file": "prometheus.yml", "target": "/root/"}]
+          "host01": [{"file": "./assets/prometheus.yml", "target": "/root/"}]
         }
-    },
-    "environment": {
-        "showdashboard": true,
-        "dashboards": [{"name": "Prometheus", "port": 9090}, {"name": "Grafana", "port": 3000}],
-        "uilayout": "terminal-iframe",
-        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
     },
     "backend": {
         "imageid": "ubuntu"

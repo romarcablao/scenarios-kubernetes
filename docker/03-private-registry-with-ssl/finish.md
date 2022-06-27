@@ -1,4 +1,10 @@
-#### Conclusion
+<br>
+
+<img src="./assets/done.png" alt="drawing" width="100"/> 
+
+<br>
+
+###  Conclusion
 
 Docker Registry is a free, open-source application for storing and accessing Docker images. You can run the registry in a container on your own network, or in a virtual network in the cloud, to host private images with secure access. For Linux hosts, there is an [official registry image](https://store.docker.com/images/registry) on Docker Store.
 

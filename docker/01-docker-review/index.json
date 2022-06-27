@@ -28,7 +28,8 @@
       },
       {
         "title": "Clean Up Images",
-        "text": "steps/step6.md"
+        "text": "steps/step6.md",
+        "verify": "verify.sh"
       }
     ],
     "finish": {

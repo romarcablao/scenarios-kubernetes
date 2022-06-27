@@ -28,3 +28,8 @@ docker image ls
 ```{{exec}}
 
 Running the `docker system df`{{exec}} command shows us that we have freed up space by removing images.
+
+
+## Challenge
+
+> Delete all the running containers and containers in the environment.

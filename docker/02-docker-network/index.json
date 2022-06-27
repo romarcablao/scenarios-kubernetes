@@ -19,7 +19,8 @@
       },
       {
         "title":"Auto Port Mapping",
-        "text": "step4.md"
+        "text": "step4.md",
+        "verify": "step4-verify.sh"
       }
     ]
   },

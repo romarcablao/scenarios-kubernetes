@@ -20,7 +20,3 @@ http: server gave HTTP response to HTTPS client
 3\. Close and save the file, then restart the docker daemon.
 
 `service docker restart`{{execute}}
-
-> **NOTE:** In **Docker for Mac**, the `Preferences` menu lets you set the address for an insecure registry under the `Daemon` panel. 
-In **Docker for Windows**, the `Settings` menu lets you set the address for an insecure registry under the `Daemon` panel:
-![MacOS menu](images/docker_windows_insecure_registry.png)

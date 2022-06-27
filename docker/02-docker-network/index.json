@@ -10,18 +10,15 @@
       {
         "title":"Creating Bridge Network",
         "text": "step2.md",
-        "code": "cleanup.sh",
         "verify": "step2-verify.sh"
       },
       {
         "title":"Manual Port Mapping",
-        "text": "step3.md",
-        "code": "cleanup.sh"
+        "text": "step3.md"
       },
       {
         "title":"Auto Port Mapping",
-        "text": "step4.md",
-        "code": "cleanup.sh"
+        "text": "step4.md"
       }
     ]
   },

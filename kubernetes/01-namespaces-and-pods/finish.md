@@ -1,6 +1,6 @@
 <br>
 
-<img src="./assets/done.png" alt="drawing" width="100"/> 
+<img src="../../../assets/done.png" alt="drawing" width="100"/> 
 
 <br>
 

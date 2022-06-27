@@ -20,4 +20,4 @@ Replace /path with the directory which contains the certs/ and auth/ directories
 
 Start your registry by issuing the following command in the directory containing the docker-compose.yml file:
 
-$ docker-compose up -d
+`docker-compose up -d`{{exec}}

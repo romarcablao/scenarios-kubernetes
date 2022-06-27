@@ -16,3 +16,7 @@ Store this value in an environment variable.
 - Try and ping "centos1" using the container name:
 `ping centos1`{{execute}}
 (It should Fail)
+
+### Cleanup
+
+> Stop and delete the `centos3` container.

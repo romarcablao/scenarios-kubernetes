@@ -2,6 +2,9 @@
   "title": "02. Docker Network",
   "description": "In this lab, we will explore docker networking",
   "details": {
+    "intro": {
+      "text": "intro.md"
+    },
     "steps": [
       {
         "title":"Bridge Network",
@@ -22,7 +25,10 @@
         "text": "step4.md",
         "verify": "step4-verify.sh"
       }
-    ]
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
   },
 	"backend": {
 		"imageid": "ubuntu"

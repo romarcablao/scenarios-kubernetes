@@ -5,8 +5,6 @@ LOGFILE=/step1-verify.log
     set -e
     date
     docker ps | grep nginx
-    docker ps | grep nginx-auto
-    docker ps | grep nginx-high
     docker ps | grep 80
 } >> ${LOGFILE} 2>&1
 

@@ -4,6 +4,6 @@
 
 <br>
 
-###  WELL DONE !
+### Well done!
 
 You solved this challenge!

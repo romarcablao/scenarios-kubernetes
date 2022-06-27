@@ -29,6 +29,10 @@
       {
         "title": "Clean Up Images",
         "text": "steps/step6.md"
+      },
+      {
+        "title": "Quiz",
+        "text": "steps/step7.md"
       }
     ],
     "finish": {

@@ -12,4 +12,3 @@ Visit https://[[KILLERCODA_URL]] or validate by [selecting the port here]({{TRAF
 
 - For communication within the network, use the exposed port.
 - For communication external to the network, use the published port. 
-

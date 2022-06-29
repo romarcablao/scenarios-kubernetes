@@ -5,7 +5,8 @@
   "details": {
     "intro": {
       "text": "intro.md",
-      "code": "courseBase.sh",
+      "background": "init/background.sh",
+      "foreground": "init/foreground.sh",
       "credits": "https://learn.hashicorp.com/terraform"
     },
     "steps": [
@@ -22,10 +23,8 @@
     },
     "assets": {
       "host01": [
-        {
-          "file": "main.tf",
-          "target": "~/terraform-docker-demo"
-        }
+        {"file": "main.tf", "target": "~/terraform-docker-demo"},
+        {"file": "wait-background.sh", "target": "/tmp", "chmod": "+x"}
       ]
     }
   },

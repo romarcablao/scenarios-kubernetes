@@ -1,47 +1,59 @@
-A Terraform configuration is a series of code blocks that define your intended infrastructure. You'll run the `terraform` command against this file to create an Nginx webserver and view the default Nginx web page.
+## Quick Example
 
-## View code
+Create a directory named learn-terraform-docker-container.
 
-First, open the `main.tf` file in the text editor by clicking this link.
+`mkdir learn-terraform-docker-container && cd learn-terraform-docker-container`{{exec}}
 
-`main.tf`
+<br>
 
-You don't have to edit or even understand the code. It defines two resources: a Docker disk image that packages the Nginx webserver, and a Docker container that gives it a name and runs it on port 80.
+```
+cat <<EOF > main.tf
+terraform {
+  required_providers {
+    docker = {
+      version = "~> 2.13.0"
+    }
+  }
+}
 
-## Init
+provider "docker" {}
 
-All Terraform workflows start with the `init` command. Terraform searches the configuration for both direct and indirect references to providers (such as Docker). Terraform then attempts to load the required plugins.
+resource "docker_image" "nginx" {
+  name         = "nginx:latest"
+  keep_locally = false
+}
 
-`terraform init`{{execute}}
+resource "docker_container" "nginx" {
+  image = docker_image.nginx.latest
+  name  = "tutorial"
+  ports {
+    internal = 80
+    external = 8000
+  }
+}
 
-## Apply
+```{{exec}}
 
-Now provision the webserver by running `apply`.
+<br>
 
-`terraform apply`{{execute}}
+Initialize the project, which downloads a plugin that allows Terraform to interact with Docker.  
 
-You will be asked to confirm. Type `yes` and press `ENTER`. It may take up to 30 seconds. A message will display confirmation that it succeeded.
+`terraform init`{{exec}}
+
+<br>
+
+Provision the NGINX server container with apply. When Terraform asks you to confirm type yes and press ENTER.  
+
+`terraform apply`{{exec}}
+
+<br>
 
 ## Verify
+Verify the existence of the NGINX container by visiting localhost:8000 in your web browser or running docker ps to see the container or running `curl localhost:8000`{{exec}}
 
-Visit this URL to view the default Nginx web page which is now live:
+<br>
 
-- [Nginx index page](https://[[KILLERCODA_URL]]/)
+`docker ps`{{exec}}
 
-Alternatively, you can examine Docker's process list. You will see the `tutorial` container which is running Nginx.
-
-`docker ps`{{execute}}
-
-## Destroy
-
-To remove the Nginx webserver as defined in `main.tf`, run the destroy command.
-
-`terraform destroy`{{execute}}
-
-You will be prompted to confirm. Type `yes` and press `ENTER`.
-
-## Conclusion
-
-You have now created and destroyed your first Terraform resources! Terraform supports hundreds of ecosystem providers, from major cloud resources to content delivery networks and more.
-
-Continue learning at [HashiCorp Learn](https://learn.hashicorp.com/terraform) and the [Terraform API documentation](https://www.terraform.io/) or discuss with others on the [Terraform forum](https://discuss.hashicorp.com/c/terraform-core/27).
+## Cleanup
+To stop the container, run `terraform destroy`{{exec}}.

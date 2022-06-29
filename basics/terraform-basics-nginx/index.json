@@ -5,8 +5,7 @@
   "details": {
     "intro": {
       "text": "intro.md",
-      "code": "init.sh",
-      "credits": "https://learn.hashicorp.com/terraform"
+      "code": "init.sh"
     },
     "steps": [
       {
@@ -15,14 +14,10 @@
       },
       {
         "text": "step2.md"
-      },
-      {
-        "text": "step3.md"
       }
     ],
     "finish": {
-      "text": "finish.md",
-      "credits": "https://learn.hashicorp.com/terraform"
+      "text": "finish.md"
     },
     "assets": {
       "host01": [

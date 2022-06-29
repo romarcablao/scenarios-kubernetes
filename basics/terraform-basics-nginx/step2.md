@@ -11,6 +11,7 @@ cat <<EOF > main.tf
 terraform {
   required_providers {
     docker = {
+      source  = "kreuzwerker/docker"
       version = "~> 2.13.0"
     }
   }
@@ -31,7 +32,7 @@ resource "docker_container" "nginx" {
     external = 8000
   }
 }
-
+EOF
 ```{{exec}}
 
 <br>
@@ -57,3 +58,9 @@ Verify the existence of the NGINX container by visiting localhost:8000 in your w
 
 ## Cleanup
 To stop the container, run `terraform destroy`{{exec}}.
+
+## Conclusion
+
+You have now created and destroyed your first Terraform resources! Terraform supports hundreds of ecosystem providers, from major cloud resources to content delivery networks and more.
+
+Continue learning at [HashiCorp Learn](https://learn.hashicorp.com/terraform) and the [Terraform API documentation](https://www.terraform.io/) or discuss with others on the [Terraform forum](https://discuss.hashicorp.com/c/terraform-core/27).

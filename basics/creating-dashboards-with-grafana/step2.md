@@ -9,7 +9,7 @@ You should be able to see the following containers running:
 - prometheus
 - grafana  
 
-Once verified, visit [Grafana](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].papa.r.killercoda.com)  
+Once verified, visit [Grafana]({{TRAFFIC_HOST1_80}}}})  
 
 Login using the following creds:
 username: admin

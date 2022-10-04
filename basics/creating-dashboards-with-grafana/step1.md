@@ -1,22 +1,12 @@
+Clone the repository. Feel free to navigate through the code.  
+This repository includes grafana and prometheus setup.
 ```
-mkdir -p /prometheus/data
-docker run -d --net=host \
-    -v /root/prometheus.yml:/etc/prometheus/prometheus.yml \
-    -v /prometheus/data:/prometheus \
-    --name prometheus-server \
-    prom/prometheus
+git clone https://github.com/thecloudspark/prometheus-and-grafana.git
+cd prometheus-and-grafana
 ```{{execute}}
 
 
+Run docker-compose up to spin up the containers
 ```
-docker run -d \
-  -v "/proc:/host/proc" \
-  -v "/sys:/host/sys" \
-  -v "/:/rootfs" \
-  --net="host" \
-  --name=promethus \
-  quay.io/prometheus/node-exporter:v0.13.0 \
-    -collector.procfs /host/proc \
-    -collector.sysfs /host/sys \
-    -collector.filesystem.ignored-mount-points "^/(sys|proc|dev|host|etc)($|/)"
+docker-compose up -d
 ```{{execute}}

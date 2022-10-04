@@ -5,20 +5,16 @@
     "details": {
         "steps": [
             {
-                "title": "Step 1 - Start Prometheus",
+                "title": "Step 1 - Run Grafana and Prometheus",
                 "text": "step1.md"
             },
             {
-                "title": "Step 2 - Start Grafana",
+                "title": "Step 2 - Access & Configure Grafana",
                 "text": "step2.md"
             },
             {
-                "title": "Step 3 - Configure Grafana",
+                "title": "Step 3 - Create Dashoards",
                 "text": "step3.md"
-            },
-            {
-                "title": "Step 4 - Create Dashoards",
-                "text": "step4.md"
             }
         ],
         "intro": {

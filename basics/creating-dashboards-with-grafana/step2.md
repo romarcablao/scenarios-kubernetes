@@ -1,4 +1,4 @@
-Once verified, [ACCESS]({{TRAFFIC_HOST1_80}}}}) Grafana or [select the port here]({{TRAFFIC_SELECTOR}}))</small>.
+Once verified, access [Grafana]({{TRAFFIC_HOST1_80}}).
 
 Login using the following creds:
 username: admin

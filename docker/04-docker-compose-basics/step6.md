@@ -12,4 +12,4 @@ return 'Hello from Docker! I have been seen {} times.\n'.format(count)
 
 
 3\. Once you are done, before moving to the next step, be sure to bring Compose down, by issuing the following:
-`docker-compose down`{{execute}}
+`docker-compose down`{{exec}}

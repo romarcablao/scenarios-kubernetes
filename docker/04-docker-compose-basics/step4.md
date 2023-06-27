@@ -1,6 +1,6 @@
 1\. Create a file called `docker-compose.yml` in your project directory and paste the following:
 
-`touch docker-compose.yml`{{execute}}
+`touch docker-compose.yml`{{exec}}
 
 <pre class="file" data-filename="docker-compose.yml" data-target="replace">
 version: '3'
@@ -8,7 +8,9 @@ services:
   web:
     build: .
     ports:
-     - "5000:5000"
+      - "5000:5000"
+    volumes:
+      - ~/composetest:/code
   redis:
     image: "redis:alpine"
 </pre>

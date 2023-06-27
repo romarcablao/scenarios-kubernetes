@@ -1,6 +1,6 @@
 1\. From your project directory, start up your application.
 
-`docker-compose up`{{execute}}
+`docker-compose up`{{exec}}
 
 Output:
 

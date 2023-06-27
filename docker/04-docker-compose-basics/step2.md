@@ -1,13 +1,13 @@
 1\. Create a directory for the project:
 
-`mkdir composetest`{{execute}}
+`mkdir sp-app`{{exec}}
 
-`cd composetest`{{execute}}
+`cd sp-app`{{exec}}
 
 
 2\. Create a file called `app.py` in your project directory and paste this in:
 
-`touch app.py`{{execute}}
+`touch app.py`{{exec}}
 
 Then,
 
@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
 3\. Create another file called `requirements.txt` in your project directory and paste the following lines in it, like this:
 
-`touch requirements.txt`{{execute}}
+`touch requirements.txt`{{exec}}
 
 <pre class="file" data-filename="requirements.txt" data-target="replace">
 flask

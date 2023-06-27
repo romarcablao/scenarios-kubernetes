@@ -9,6 +9,11 @@ Tag the image as localhost:5000/my-ubuntu. This creates an additional tag for th
 `docker tag nginx:latest localhost:5000/my-nginx`{{exec}}
 
 <br>
+Make sure the local registry is running. Click the code below to bring up the local registry.
+
+`docker run -d -p 5000:5000 --name registry1 registry:latest`{{exec}}`{{exec}}
+
+<br>
 
 Push the image to the local registry running at localhost:5000:
 
@@ -19,6 +24,9 @@ Push the image to the local registry running at localhost:5000:
 Remove the locally-cached nginx:latest and localhost:5000/my-nginx images, so that you can test pulling the image from your registry. This does not remove the localhost:5000/my-nginx image from your registry.
 
 `docker image remove nginx:latest`{{exec}}
+
+<br>
+
 `docker image remove localhost:5000/my-nginx`{{exec}}
 
 <br>

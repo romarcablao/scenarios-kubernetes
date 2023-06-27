@@ -7,7 +7,7 @@
 
 2\. Create a file called `app.py` in your project directory and paste this in:
 
-`touch app.py`{{exec}}
+`vi app.py`{{exec}}
 
 Then,
 
@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
 3\. Create another file called `requirements.txt` in your project directory and paste the following lines in it, like this:
 
-`touch requirements.txt`{{exec}}
+`vi requirements.txt`{{exec}}
 
 <pre class="file" data-filename="requirements.txt" data-target="replace">
 flask

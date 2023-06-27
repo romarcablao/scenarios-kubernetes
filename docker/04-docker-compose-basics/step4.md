@@ -1,6 +1,6 @@
 1\. Create a file called `docker-compose.yml` in your project directory and paste the following:
 
-`touch docker-compose.yml`{{exec}}
+`vi docker-compose.yml`{{exec}}
 
 <pre class="file" data-filename="docker-compose.yml" data-target="replace">
 version: '3'

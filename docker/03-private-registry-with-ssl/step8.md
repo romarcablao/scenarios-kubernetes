@@ -26,7 +26,7 @@ registry:
     REGISTRY_AUTH_HTPASSWD_PATH: /auth/htpasswd
     REGISTRY_AUTH_HTPASSWD_REALM: Registry Realm
   volumes:
-    - registr-data:/var/lib/registry
+    - registry-data:/var/lib/registry
     - certs:/certs
 ```{{copy}}
 

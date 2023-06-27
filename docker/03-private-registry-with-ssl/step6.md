@@ -36,13 +36,13 @@ If you are running the registry locally, be sure to use your host name as the CN
 
 2\. To get the docker daemon to trust the certificate, copy the `domain.crt` file.
 
-`sudo su`{{copy}}
+`sudo su`{{exec}}
 
-`mkdir /etc/docker/certs.d`{{copy}}
+`mkdir /etc/docker/certs.d`{{exec}}
 
-`mkdir /etc/docker/certs.d/<localhost>:5000`{{copy}}
+`mkdir /etc/docker/certs.d/localhost:5000`{{exec}}
 
-`cp `pwd`/certs/domain.crt /etc/docker/certs.d/<localhost>:5000/ca.crt`{{copy}}
+`cp ~/certs/domain.crt /etc/docker/certs.d/localhost:5000/ca.crt`{{exec}}
 
 
 3\. Make sure to restart the docker daemon.

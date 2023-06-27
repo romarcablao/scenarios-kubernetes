@@ -20,3 +20,7 @@ http: server gave HTTP response to HTTPS client
 3\. Close and save the file, then restart the docker daemon.
 
 `service docker restart`{{execute}}
+
+4\. Start the local registry.
+
+`docker run -d -p 5000:5000 --name registry registry:2`{{exec}}

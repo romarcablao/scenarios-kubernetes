@@ -15,6 +15,8 @@ In this example, the new container will use a host-mounted Docker volume. When t
 
 3\. Tag and push the container with the new IP address of the registry.
 
+`docker pull hello-world`{{exec}}
+
 `docker tag hello-world localhost:5000/hello-world`{{exec}}
 
 `docker push localhost:5000/hello-world`{{exec}}

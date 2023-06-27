@@ -1,4 +1,3 @@
-Basic configuration
 To configure the container, you can pass additional or modified options to the docker run command.
 
 The following sections provide basic guidelines for configuring your registry. For more details, see the registry configuration reference.

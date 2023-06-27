@@ -1,6 +1,11 @@
 Deploy your registry using a Compose file
-If your registry invocation is advanced, it may be easier to use a Docker compose file to deploy it, rather than relying on a specific docker run invocation. Use the following example docker-compose.yml as a template.
+If your registry invocation is advanced, it may be easier to use a Docker compose file to deploy it, rather than relying on a specific docker run invocation. 
 
+`vi docker-compose.yml`{{execute}}
+
+Use the following example docker-compose.yml as a template.
+
+```
 registry:
   restart: always
   image: registry:2
@@ -13,9 +18,10 @@ registry:
     REGISTRY_AUTH_HTPASSWD_PATH: /auth/htpasswd
     REGISTRY_AUTH_HTPASSWD_REALM: Registry Realm
   volumes:
-    - /path/data:/var/lib/registry
-    - /path/certs:/certs
-    - /path/auth:/auth
+    - registr-data:/var/lib/registry
+    - certs:/certs
+```{{copy}}
+
 Replace /path with the directory which contains the certs/ and auth/ directories.
 
 Start your registry by issuing the following command in the directory containing the docker-compose.yml file:

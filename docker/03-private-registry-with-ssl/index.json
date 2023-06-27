@@ -13,11 +13,11 @@
                 "text": "step2.md"
             },
             {
-                "title": "Understanding Image Names",
+                "title": "Stop the Local Registry",
                 "text": "step3.md"
             },
             {
-                "title": "Pushing and Pulling from the Local Registry",
+                "title": "Basic Configuration",
                 "text": "step4.md"
             },
             {

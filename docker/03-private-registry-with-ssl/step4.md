@@ -18,6 +18,6 @@ If you are already using port 5000, or you want to run multiple local registries
 
 <br>
 
-If you want to change the port the registry listens on within the container, you can use the environment variable REGISTRY_HTTP_ADDR to change it. This command causes the registry to listen on port 5001 within the container:
+If you want to change the port the registry listens on within the container, you can use the environment variable REGISTRY_HTTP_ADDR to change it. This command causes the registry to listen on port 5002 within the container:
 
-`docker run -d -e REGISTRY_HTTP_ADDR=0.0.0.0:5001 -p 5001:5001 --name registry-test registry:2`{{exec}}
+`docker run -d -e REGISTRY_HTTP_ADDR=0.0.0.0:5002 -p 5002:5002 --name registry-test registry:2`{{exec}}

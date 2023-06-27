@@ -23,7 +23,7 @@ There are quite a few fields but you can leave some blank
 For some fields there will be a default value,
 If you enter '.', the field will be left blank.
 -----
-Country Name (2 letter code) [AU]:US
+Country Name (2 letter code) [AU]:PH
 State or Province Name (full name) [Some-State]:
 Locality Name (eg, city) []:
 Organization Name (eg, company) [Internet Widgits Pty Ltd]:Docker
@@ -36,8 +36,6 @@ If you are running the registry locally, be sure to use your host name as the CN
 
 2\. To get the docker daemon to trust the certificate, copy the `domain.crt` file.
 
-`sudo su`{{exec}}
-
 `mkdir /etc/docker/certs.d`{{exec}}
 
 `mkdir /etc/docker/certs.d/localhost:5000`{{exec}}
@@ -47,6 +45,6 @@ If you are running the registry locally, be sure to use your host name as the CN
 
 3\. Make sure to restart the docker daemon.
 
-`sudo service docker restart`{{execute}}
+`service docker restart`{{execute}}
 
 Now we have an SSL certificate and can run a secure registry.

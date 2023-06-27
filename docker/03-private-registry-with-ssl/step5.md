@@ -1,8 +1,8 @@
 1\. Remove the existing registry container by removing the container which holds the storage layer. Any images pushed will be deleted:
 
-`docker kill registry`{{exec}}
+`docker kill registry registry-test`{{exec}}
 
-`docker rm registry`{{exec}}
+`docker rm registry registry-test`{{exec}}
 
 
 In this example, the new container will use a host-mounted Docker volume. When the registry server in the container writes image layer data, it appears to be writing to a local directory in the container but it will be writing to a directory on the host.

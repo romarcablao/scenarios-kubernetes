@@ -4,6 +4,9 @@ You can pull an image from Docker Hub and push it to your registry. The followin
 Pull the nginx:latest image from Docker Hub.
 
 `docker pull nginx:latest`{{exec}}
+
+<br>
+
 Tag the image as localhost:5000/my-ubuntu. This creates an additional tag for the existing image. When the first part of the tag is a hostname and port, Docker interprets this as the location of a registry, when pushing.
 
 `docker tag nginx:latest localhost:5000/my-nginx`{{exec}}
@@ -18,10 +21,8 @@ Push the image to the local registry running at localhost:5000:
 
 Remove the locally-cached nginx:latest and localhost:5000/my-nginx images, so that you can test pulling the image from your registry. This does not remove the localhost:5000/my-nginx image from your registry.
 
-`docker image remove nginx:latest`{{exec}}
-
-<br>
-
+`docker image remove nginx:latest`{{exec}}  
+ 
 `docker image remove localhost:5000/my-nginx`{{exec}}
 
 <br>

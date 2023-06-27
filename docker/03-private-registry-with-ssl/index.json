@@ -33,7 +33,7 @@
                 "text": "step7.md"
             },
             {
-                "title": "Accessing the Secure Registry",
+                "title": "Deploy your registry using a Compose file",
                 "text": "step8.md"
             }
         ],

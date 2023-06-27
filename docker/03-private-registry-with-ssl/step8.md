@@ -1,5 +1,13 @@
-Deploy your registry using a Compose file
 If your registry invocation is advanced, it may be easier to use a Docker compose file to deploy it, rather than relying on a specific docker run invocation. 
+
+
+1\. If you have an insecure registry container still running, remove it:
+
+`docker kill registry`{{exec}}
+
+`docker rm registry`{{exec}}
+
+2\. Create a compose file.
 
 `vi docker-compose.yml`{{execute}}
 
@@ -22,8 +30,6 @@ registry:
     - certs:/certs
 ```{{copy}}
 
-Replace /path with the directory which contains the certs/ and auth/ directories.
-
-Start your registry by issuing the following command in the directory containing the docker-compose.yml file:
+3\. Start your registry by issuing the following command in the directory containing the docker-compose.yml file:
 
 `docker-compose up -d`{{exec}}

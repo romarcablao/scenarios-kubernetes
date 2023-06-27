@@ -4,8 +4,8 @@
 
 Output:
 ```
-Starting composetest_redis_1...
-Starting composetest_web_1...
+Starting sp-app_redis_1...
+Starting sp-app_web_1...
 ```
 
 
@@ -18,8 +18,8 @@ See it? Make sure you do, before moving on. The output should look like this:
 ```console
 Name                   Command                  State         Ports
 -------------------------------------------------------------------
-composetest_redis_1   /usr/local/bin/run         Up
-composetest_web_1     /bin/sh -c python app.py   Up    5000->5000/tcp
+sp-app_redis_1   /usr/local/bin/run         Up
+sp-app_web_1     /bin/sh -c python app.py   Up    5000->5000/tcp
 ```
 
 

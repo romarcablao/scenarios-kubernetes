@@ -10,7 +10,7 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - ~/composetest:/code
+      - /root/sp-app:/code
   redis:
     image: "redis:alpine"
 </pre>

@@ -1,7 +1,7 @@
 {
     "id": "creating-dashboards-with-grafana",
     "title": "Creating Dashboards with Prometheus and Grafana",
-    "description": "Learn how to dashboard Prometheus metrics with Grafana",
+    "description": "Learn how to visualize Prometheus metrics with Grafana dashboards",
     "details": {
         "steps": [
             {

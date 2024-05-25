@@ -1,0 +1,31 @@
+{
+  "id": "opentofu-basics-nginx",
+  "title": "OpenTofu Basics",
+  "description": "OpenTofu tutorial with just the basics",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "code": "init.sh"
+    },
+    "steps": [
+      {
+        "text": "step1.md",
+        "verify": "step1-verify.sh"
+      },
+      {
+        "text": "step2.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "main.tf", "target": "~/opentofu-docker-demo"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

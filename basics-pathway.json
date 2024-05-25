@@ -5,7 +5,12 @@
       {
         "course_id": "terraform-basics-nginx",
         "title": "Terraform Basics",
-        "description": "Learn to use Terraform to provision an Nginx web server within Docker."
+        "description": "Learn to use Terraform to provision an Nginx web server"
+      },
+      {
+        "course_id": "opentofu-basics-nginx",
+        "title": "OpenTofu Basics",
+        "description": "Learn to use OpenTofu to provision an Nginx web server"
       },
       {
         "course_id": "deploy-istio-on-kubernetes",

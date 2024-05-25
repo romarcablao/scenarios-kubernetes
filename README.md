@@ -1,6 +1,6 @@
 # Cloud Native Basics
 
-This repository containers labs for Cloud Native Basics.
+This repository contains labs for Cloud Native Basics.
 
 > Disclaimer: Some of the scenarios in this repository are referenced from Katakoda which are publicly available.
 

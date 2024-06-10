@@ -37,5 +37,5 @@ kubectl get pods -w
 
 
 Check the endpoints:  
-[Vote]({{TRAFFIC_HOST1_31001}}).  
-[Result]({{TRAFFIC_HOST1_31000}}).  
+[Vote]({{TRAFFIC_HOST1_31000}}).  
+[Result]({{TRAFFIC_HOST1_31001}}).  

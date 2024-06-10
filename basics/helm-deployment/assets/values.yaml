@@ -3,10 +3,10 @@ vote:
   service:
     type: NodePort
     targetPort: 5000
-    nodePort: 31001
+    nodePort: 31000
 
 result:
   service:
     type: NodePort
     targetPort: 5001
-    nodePort: 31000
+    nodePort: 31001

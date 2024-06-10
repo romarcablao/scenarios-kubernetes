@@ -1,0 +1,10 @@
+# Override service type and port
+vote:
+  service:
+    type: NodePort
+    nodePort: 31001
+
+result:
+  service:
+    type: NodePort
+    nodePort: 31000

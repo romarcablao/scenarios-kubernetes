@@ -13,6 +13,11 @@
         "description": "Learn to use OpenTofu to provision an Nginx web server"
       },
       {
+        "course_id": "helm-deployment",
+        "title": "Deploy Workloads Using Helm",
+        "description": "Learn how to get started with helm deployment."
+      },
+      {
         "course_id": "deploy-istio-on-kubernetes",
         "title": "Deploy Istio on Kubernetes",
         "description": "Learn to use Istio."

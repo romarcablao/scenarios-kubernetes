@@ -18,11 +18,15 @@ helm repo add thecloudspark https://thecloudspark.github.io/helm-charts
 helm repo update
 ```{{exec}}
 
+<br>
+
 Before we install the chart, lets take a quick look at the `values.yaml`.
 
 ```plain
 cat values.yaml
 ```{{exec}}
+
+<br>
 
 As you may see, we use service of type `NodePort` and specify ports per workloads. Now install the chart and apply overrides from `values.yaml`
 
@@ -30,12 +34,15 @@ As you may see, we use service of type `NodePort` and specify ports per workload
 helm install app -f values.yaml thecloudspark/vote-app --version 1.0.5
 ```{{exec}}
 
+<br>
+
 Wait until all pods are running
 ```plain
 kubectl get pods -w
 ```{{exec}}
 
+<br>
 
-Check the endpoints:  
-[Vote]({{TRAFFIC_HOST1_31000}}).  
-[Result]({{TRAFFIC_HOST1_31001}}).  
+Click [Vote]({{TRAFFIC_HOST1_31000}}) to access the vote UI.
+
+Click [Result]({{TRAFFIC_HOST1_31001}}) to access the results UI.
